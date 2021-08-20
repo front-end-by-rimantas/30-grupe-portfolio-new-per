@@ -25,6 +25,7 @@ section {
 
 /* HERO */
 .hero {
+    position: relative;
     background-image: url(../img/header.jpeg);
     height: 100vh;
     width: 100%;
@@ -32,14 +33,50 @@ section {
     background-size: cover;
     background-attachment: fixed;
     background-color: #666666;
-    /* transition: background-position .2s ease-in; */
-    /* background: rgba(0, 0, 0, 0.6); */
 }
 
-/* .hero:hover {
-    transition: background-position .2s ease-in;
-    background-position: 0 -10px;
-}  */
+/* .hero::before {
+    background: rgba(0, 0, 0, 0.6);
+} */
+
+.overlay {
+    background: rgba(0, 0, 0, 0.6);
+}
+/* margin-top: 17px; */
+
+/* .main-row {
+    display: inline-block;
+    width: 78%;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+} */
+
+.hero .logo {
+    width: 100px;
+}
+
+.hero .navigation {
+    float: right;
+}
+
+.hero .navigation a {
+    color: var(--third);
+    text-decoration: none;
+    font-size: 15px;
+    margin: 0 15px;
+    cursor: pointer;
+    line-height: 40px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.hero .navigation a:first-child {
+    color: var(--primary);
+}
+
+.hero .navigation a:hover {
+    color: var(--primary);
+}
 
 /* SECTION ABOUT ME */
 .about-me {
