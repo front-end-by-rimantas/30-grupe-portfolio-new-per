@@ -83,6 +83,8 @@
 
 .hero .autotype-container {
   text-align: center;
+  height: 30px;
+  margin-bottom: 27px;
 }
 
 .hero .autotype-text {
