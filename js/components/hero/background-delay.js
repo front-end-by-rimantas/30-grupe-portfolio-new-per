@@ -33,7 +33,12 @@ window.addEventListener('scroll', function (event) {
     isScrolling = setTimeout(function () {
         // console.log(direction);
         move += direction >= 0 ? 30 : -30;
+        if (window.scrollY === 0) {
+            move = 0;
+        }
+
         // console.log(move);
+
         hero.style = `transition: background-position .2s ease-in; background-position: 0 ${move}px;`;
     }, 70);
 
