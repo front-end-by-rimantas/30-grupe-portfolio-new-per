@@ -1,0 +1,35 @@
+.skill-progess-bar {
+    border: 1px solid red;
+    width: 100%;
+}
+
+.skill-progess-bar > top {
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 10px;
+
+}
+
+.skill-progess-bar > top > label{
+    float: left;
+
+}
+
+.skill-progess-bar > top > value {
+    float: right;
+
+}
+
+.skill-progess-bar > bottom {
+    width: 100%;
+    height: 10px;
+    background-color:burlywood):
+
+}
+
+.skill-progess-bar > bottom > skills-bar {
+    width: 75%;
+    height: 100%;
+    background-color: black;
+
+}
