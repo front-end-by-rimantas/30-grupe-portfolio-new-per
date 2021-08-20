@@ -30,6 +30,6 @@ const skillsProgressData = [
         label: `Photo shop`,
         value: 94,
     },
-
-
 ];
+
+export {skillsProgressData}
