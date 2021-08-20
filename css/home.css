@@ -44,13 +44,9 @@ section {
 }
 /* margin-top: 17px; */
 
-/* .main-row {
-    display: inline-block;
-    width: 78%;
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%, 0);
-} */
+.main-row {
+    margin-top: 17px;
+}
 
 .hero .logo {
     width: 100px;
@@ -77,6 +73,68 @@ section {
 .hero .navigation a:hover {
     color: var(--primary);
 }
+
+.hero span {
+    display: block;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 20px;
+    color: var(--paragraph);
+}
+
+.hero .title {
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 30px;
+    display: block;
+    color: var(--third);
+    font-size: 4rem;
+    font-weight: 900;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    line-height: 1.2;
+}
+
+.hero .autotype-text {
+    margin-bottom: 27px;
+    text-align: center;
+    display: block;
+    font-size: .8rem;
+    font-weight: 700;
+    letter-spacing: 3.8px;
+    text-transform: uppercase;
+    font-family: 'Raleway', sans-serif;
+    border-top: 1px solid rgba(255, 255, 255, 0.07);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+    color: var(--paragraph2);
+    line-height: 1.85714286em;
+}
+
+.hero .socials {
+    text-align: center;
+    display: block;
+}
+
+.hero .socials a {
+    display: inline-block;
+    width: 43px;
+    height: 43px;
+    color: var(--third);
+    margin: 0 5px;
+    text-decoration: none;
+    line-height: 43px;
+}
+
+.hero .socials a:hover {
+
+    background-color: var(--primary);
+
+    border-radius: 50%;
+    
+}
+
+/* ------------------------------------------------------ */
 
 /* SECTION ABOUT ME */
 .about-me {
