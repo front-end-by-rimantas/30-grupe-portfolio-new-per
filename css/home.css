@@ -36,11 +36,42 @@ section {
 }
 
 /* .hero::before {
-    background: rgba(0, 0, 0, 0.6);
+    background: rgba(248, 243, 243, 0.6);
+    transition: background-color 2s ease-in;
 } */
 
-.overlay {
-    background: rgba(0, 0, 0, 0.6);
+ .overlay {
+    /* content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0; 
+    /* background: rgba(0, 0, 0, 0.6);
+    transition: background-color 2s ease-in; */ */
+} 
+
+.overlay::before {
+    animation-name: ;
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    /* background: transparent; */
+    
+    transition: background-color 2s ease-in;
+    /* background-color: rgba(0, 0, 0, 0.6); */
+}
+
+@keyframes overlay {
+    0% {
+
+    }
+    100% {
+
+    }
 }
 /* margin-top: 17px; */
 
