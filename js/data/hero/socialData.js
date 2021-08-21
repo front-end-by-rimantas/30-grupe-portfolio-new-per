@@ -25,7 +25,7 @@ let socialData = [
         link: '#'
     },
     {
-        status: 'published',
+        status: 'draft',
         icon: 'rss',
         link: '#'
     }

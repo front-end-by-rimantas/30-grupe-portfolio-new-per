@@ -57,6 +57,7 @@
 
 .hero .navigation a:hover {
   color: var(--primary);
+  transition: color .2s ease-in;
 }
 
 .hero span {
@@ -118,9 +119,17 @@
   line-height: 43px;
 }
 
+.hero .socials a:before {
+  background-color: #201f1f54;
+  display: inline-block;
+  width: 43px;
+  height: 43px;
+  border-radius: 50%;
+}
+
 .hero .socials a:hover {
   background-color: var(--primary);
-
+  transition: background-color .2s ease-in;
   border-radius: 50%;
 }
 
