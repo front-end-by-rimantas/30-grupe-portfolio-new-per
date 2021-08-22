@@ -1,8 +1,10 @@
 // import JS modules
 
+import { SkillsProgressBars } from "./components/progress-bar/SkillsProgressBars.js";
+import { skillsProgressData } from "./data/skillsProgressData.js";
 
-import { SkillsProgressBars } from "./components/progress-bar/SkillsProgressBars";
-import { skillsProgressData } from "./data/skillsProgressData";
+new SkillsProgressBars('.left-skills-block', skillsProgressData);
+new SkillsProgressBars('.right-skills-block', skillsProgressData);
 
-new SkillsProgressBars(skillsProgressData)
+
 // execute JS modules
