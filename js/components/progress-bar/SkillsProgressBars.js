@@ -90,7 +90,6 @@ class SkillsProgressBars {
     render() {
         let HTML = '';
         
-    
         for (const item of this.data) {
             if (!this.isValidDataItem) {
                 continue;
@@ -103,7 +102,7 @@ class SkillsProgressBars {
                         </div>
                         <div class="bottom">
                             <div class="skills-bar" style="width: ${item.value}%;">
-                            <div class="loading-bar"></div>
+                            <div class="bar"></div>
                         </div>
                     </div>
                 </div>`;
