@@ -5,6 +5,10 @@ const logoDOM = document.querySelector('.logo');
 const logo2DOM = document.querySelector('.logo2');
 const navbarExpandDOM = document.querySelector('.hero .navigation');
 let isVisible = false;
+// let isVisible = window.innerWidth <= 861 ? true : false;
+
+// console.log(window);
+window.innerWidth <= 861 ? navbarExpandDOM.classList.add('expanded') : navbarExpandDOM.classList.remove('expanded');
 
 navbarDOM.addEventListener('click', function() {
     if (isVisible) {
@@ -16,9 +20,6 @@ navbarDOM.addEventListener('click', function() {
     }
     
 });
-
-console.log(window);
-window.innerWidth <= 861 ? navbarExpandDOM.classList.add('expanded') : 0;
 
 addEventListener('scroll', () => {
     // console.log(scrollY);
@@ -37,12 +38,16 @@ addEventListener('scroll', () => {
 
 
 window.addEventListener('resize', function() {
-    console.log(window.innerHeight);
+    // console.log(window.innerHeight);
     // console.log(window.innerWidth);
     if (window.innerWidth <= 861) {
         navbarExpandDOM.classList.add('expanded');
+        navbarExpandDOM.style.display = "none";
+        isVisible = false;
     } else {
         navbarExpandDOM.classList.remove('expanded');
+        navbarExpandDOM.style.display = "inline-block";
+        isVisible = true;
     }
 
 });
