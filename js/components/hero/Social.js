@@ -12,7 +12,7 @@ class Social {
             html += `<a href="${link}" class="fa fa-${icon}"></a>\n`;
         }
         socialDom.innerHTML = html;
-        console.log(html);
+        // console.log(html);
     }
 };
 
