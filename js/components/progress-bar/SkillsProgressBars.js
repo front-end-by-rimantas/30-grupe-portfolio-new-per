@@ -91,7 +91,7 @@ class SkillsProgressBars {
         let HTML = '';
         
         for (const item of this.data) {
-            if (!this.isValidDataItem) {
+            if (!this.isValidDataItem(item)) {
                 continue;
             }    
            
