@@ -40,8 +40,62 @@ section {
 
 /* SECTION MY RESUME */
 .my-resume {
-
+  display: inline-block;
+  width: 100%;
+  margin-top: auto;
+  background-color: peru;
 }
+
+.row-title {
+  display: inline-block;
+  width: 800px;
+  margin-top: auto;
+  margin-left: -15;
+  margin-right: -15;
+  background-color: yellow;
+}
+
+.col-md-6 {
+  flex: 0 0 50%;
+  max-width: 50%;
+  position: relative;
+  width: 100%;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none !important;
+  outline: none !important;
+}
+
+.my-resume h3 {
+  margin-top: 15px;
+  margin-bottom: 6px;
+}
+
+.my-resume .col-md-6 marker {
+  right: 40px !important;
+}
+
+.my-resume .col-md-6 ul {
+  display: block;
+  margin-block-start: 1em;
+  margin-inline-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px;
+  text-align: right !important;
+}
+
+.my-resume li {
+  padding: 30px 30px 10px;
+};
+
+
+
+/* END SECTION MY RESUME */
+
 
 /* SECTION COUNTER */
 .counter {
