@@ -8,6 +8,7 @@
     font-family: 'Roboto', sans-serif;
     font-size: 1em;
     line-height: 1.85714286em;
+    margin-bottom: 50px;
 }
 
 .latest-blog img {
@@ -43,6 +44,10 @@
     
 }
 
+.latest-blog .blog-title:hover {
+    color: var(--primary);
+}
+
 .latest-blog .blog-paragraph {
     font-family: 'Roboto', sans-serif;
     font-size: 1em;
@@ -74,8 +79,6 @@
 .latest-blog .thumbnail img {
     width: 50px;
     border-radius: 50px
-   
-
 }
 
 .latest-blog .person {
@@ -107,3 +110,43 @@
     float: right;
 }
 
+@media (max-width: 1200px) {
+    .latest-blog .author {
+        padding-top: 0px;
+        float: none;
+        display: block;
+   }
+   
+   .latest-blog .date {
+       padding-top: 0px;
+       float: none;
+       display: block;
+   }
+}
+
+@media (max-width: 991px) {
+    .latest-blog .author {
+        padding-top: 16px;
+        float: left;
+   }
+   
+   .latest-blog .date {
+       padding-top: 16px;
+       float: left;
+       padding-left: 20px;
+   }
+}
+
+@media (max-width: 370px) {
+    .latest-blog .author {
+        padding-top: 0px;
+        float: none;
+        display: block;
+   }
+   
+   .latest-blog .date {
+       padding-top: 0px;
+       float: none;
+       display: block;
+   }
+}
