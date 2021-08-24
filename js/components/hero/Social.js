@@ -1,3 +1,4 @@
+// This is script for automatic social icons loads from external file
 class Social {
     constructor(className, data) {
         this.data = data;

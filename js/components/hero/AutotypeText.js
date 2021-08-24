@@ -1,3 +1,5 @@
+// This is never ending automatically typed and deleted text in hero section
+
 const autotypeText = document.querySelector('.autotype-text');
 autotypeText.innerHTML = 'VUALIA';
 

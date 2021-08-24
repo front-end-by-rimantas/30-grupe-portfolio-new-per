@@ -1,3 +1,5 @@
+// This is script for top sticky menu and for mobile navbar menu
+
 const targetDOM = document.querySelector(['.sticky-begin']);
 const navigationDOM = document.querySelector('.hero nav');
 const navbarDOM = document.getElementById('navigation');
@@ -10,6 +12,7 @@ let isVisible = false;
 // console.log(window);
 window.innerWidth <= 861 ? navbarExpandDOM.classList.add('expanded') : navbarExpandDOM.classList.remove('expanded');
 
+// Listener for navbar click event. It expands menu if it is shrinked and vice wersa
 navbarDOM.addEventListener('click', function() {
     if (isVisible) {
         navbarExpandDOM.style.display = "none";
@@ -21,6 +24,7 @@ navbarDOM.addEventListener('click', function() {
     
 });
 
+// It enables sticky menu when certain position of the Heoro section is reached
 addEventListener('scroll', () => {
     // console.log(scrollY);
     
@@ -36,7 +40,8 @@ addEventListener('scroll', () => {
     }
 })
 
-
+// hides or displays navbar menu depending on screen size
+// navbar expanded menu has different style then default or sticky menu so "expanded" class is added to represent that
 window.addEventListener('resize', function() {
     // console.log(window.innerHeight);
     // console.log(window.innerWidth);
