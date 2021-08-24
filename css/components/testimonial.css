@@ -109,3 +109,11 @@
     background-color: var(--primary);
     width: 40px;
 }
+
+@media (max-width: 576px) {
+    .testimonial .content {
+        width: 90%;
+        margin-left: 5%;
+        padding: 32px 10px;
+    }
+}
