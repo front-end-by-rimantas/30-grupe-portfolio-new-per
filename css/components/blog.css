@@ -4,6 +4,10 @@
 
 .latest-blog .blog-container {
     background-color: var(--background);
+    position: relative;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1em;
+    line-height: 1.85714286em;
 }
 
 .latest-blog img {
@@ -11,7 +15,14 @@
 }
 
 .latest-blog .blog-button {
-
+    color: var(--primary);
+    background-color: var(--third);
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    padding: .2rem .4rem;
+    border-radius: 30px;
+    font-weight: 400;
 }
 
 .latest-blog .blog-content {
@@ -71,13 +82,13 @@
     float: left;
     text-align: justify;
     padding: 8px;
-    font-weight: 400;
+    font-weight: 300;
     line-height: 1.85714286em;
     font-family: 'Montserrat', sans-serif;
     font-size: .86em;
     text-transform: uppercase;
     color: var(--secondary);
-    width: 80%;
+    width: 75%;
 }
 
  /*  */
@@ -93,6 +104,6 @@
 
 .latest-blog .date {
     padding-top: 16px;
-    float: left;
+    float: right;
 }
 
