@@ -54,9 +54,10 @@
     line-height: 1.85714286em;
     font-weight: 400;
     color: var(--paragraph);
-    
     border-bottom: 1px solid #fff;
     padding-bottom: 20px;
+    height: 65px;
+    overflow-y: hidden 
 }
 
 .latest-blog .blog-info {
