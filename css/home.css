@@ -7,6 +7,9 @@
 /* 3rd-party */
 @import "./3rd-party/fontawesome.min.css";
 
+/* Text Fonts */
+@import "../fonts/text-fonts/text-fonts.css";
+
 /* components */
 @import "./components/button.css";
 @import "./components/footer.css";
@@ -22,9 +25,7 @@ section {
   padding: 50px 0;
 }
 
-/* HERO */
-.hero {
-}
+/* ------------------------------------------------------ */
 
 /* SECTION ABOUT ME */
 .about-me > .left-column > img {
