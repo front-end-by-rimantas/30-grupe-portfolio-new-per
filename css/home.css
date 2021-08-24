@@ -1,80 +1,97 @@
 /* base */
-@import './base/reset.css';
-@import './base/variables.css';
-@import './base/layout.css';
-@import './base/base.css';
+@import "./base/reset.css";
+@import "./base/variables.css";
+@import "./base/layout.css";
+@import "./base/base.css";
 
 /* 3rd-party */
-@import './3rd-party/fontawesome.min.css';
+@import "./3rd-party/fontawesome.min.css";
 
 /* components */
-@import './components/button.css';
-@import './components/footer.css';
-@import './components/header.css';
+@import "./components/button.css";
+@import "./components/footer.css";
+@import "./components/header.css";
 
 /* CUSTOM PAGE STYLE BELOW THIS COMMENT LINE */
-
 
 /***************************/
 /* CUSTOM STYLE*/
 /***************************/
 
 section {
-    padding: 50px 0;
+  padding: 50px 0;
 }
 
 /* HERO */
 .hero {
-
 }
 
 /* SECTION ABOUT ME */
-.about-me {
-
+.about-me > .left-column > img {
+  width: 100%;
+  border: 8px solid #f4f5f8;
+  border-radius: 1px;
+}
+.about-me > .right-column > p {
+  border-bottom: 1px solid var(--paragraph);
+}
+.about-me > .right-column > a {
+}
+.about-me > .right-column > h2 {
+  font: 32px Montserrat, sans-serif;
+  border-bottom: 1px solid var(--paragraph2);
+  width: 60%;
+}
+.about-me > .right-column > h2 > span {
+  color: var(--primary);
+  position: relative;
+  font: 32px Montserrat, sans-serif;
+}
+.about-me > .right-column > h2 > span::before {
+  content: "";
+  display: inline-block;
+  width: 60px;
+  height: 1px;
+  bottom: 0px;
+  position: absolute;
+  background-color: var(--primary);
+}
+.about-me > .right-column > h3 {
+  font: 19.2px Montserrat, sans-serif;
 }
 
 /* SECTION MY SKILLS */
 .my-skills {
-
 }
 
 /* SECTION MY RESUME */
 .my-resume {
-
 }
 
 /* SECTION COUNTER */
 .counter {
-
 }
 
 /* SECTION MY SERVICES */
 .my-services {
-
 }
 
 /* SECTION MY PORTFOLIO */
 .my-portfolio {
-
 }
 
 /* SECTION MY TESTIMONIALS */
 .testimonial {
-
 }
 
 /* SECTION LATEST BLOG */
 .latest-blog {
-
 }
 
 /* SECTION GET IN TOUCH */
 .contact {
-
 }
 
 /* FOOTER */
 footer {
-    
 }
-

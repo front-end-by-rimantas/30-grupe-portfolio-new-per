@@ -3,7 +3,7 @@
 ![Gluten Status](https://img.shields.io/badge/Gluten-Free-green.svg)
 ![Eco Status](https://img.shields.io/badge/ECO-Friendly-green.svg)
 
-# Landrick portfolio
+# New-per portfolio
 
 _30 group website project_
 
@@ -11,7 +11,7 @@ This project is for educational porpuses only. Pull request are welcome, but pri
 
 Site published at: https://front-end-by-rimantas.github.io/30-grupe-portfolio/
 
-Design: https://shreethemes.in/landrick/layouts/index-business.html
+Design: https://new-per.netlify.app/demo-3.html#
 
 ## Project features
 
@@ -27,4 +27,8 @@ Design: https://shreethemes.in/landrick/layouts/index-business.html
 
 ## Authors
 
-Rimantas: [Github](https://github.com/belauzas)
+Rolandas: [Github](https://github.com/kvadrantas)
+Donaldas: [Github](https://github.com/Tester01024)
+Jevgenijus: [Github](https://github.com/Mirfua)
+Arturas: [Github](https://github.com/ReaLzyyy)
+Darius: [Github](https://github.com/DarPoz)

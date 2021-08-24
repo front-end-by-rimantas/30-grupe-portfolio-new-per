@@ -1,5 +1,5 @@
 {
-  "name": "landrick-portfolio",
+  "name": "newper-portfolio",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -7,8 +7,13 @@
     "dev": "live-server --port=3000",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": ["html5", "css3", "es6"],
-  "author": "Rimantas Belovas",
+  "keywords": [
+    "html5",
+    "css3",
+    "es6",
+    "js"
+  ],
+  "author": "Rolandas Seputis, Donaldas Aranauskas, Jevgenijus Suchodolskis, Arturas Stefanovic, Darius Pozela ",
   "license": "MIT",
   "devDependencies": {
     "live-server": "^1.2.1"
