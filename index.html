@@ -11,10 +11,41 @@
 
 <body>
     <div class="hero">
-        HERO CONTENT HERE
+        <div class="overlay">
+        <div class="main-row">
+            <nav>
+                <a href="#"><img class="logo" src="./img/logo-2.png" alt="Main Logo"></a>
+                <a href="#"><img class="logo2 hide" src="./img/logo.png" alt="Main Logo"></a>
+                <div class="navigation ">
+                    <a href="#">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#services">Services</a>
+                    <a href="#portfolio">Portfolio</a>
+                    <a href="#client">Client</a>
+                    <a href="#blog">Blog</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                <div class="navbar-holder hide">
+                    <div id = "navigation" class = "navbar hide" href="#"></div>
+                </div>
+            </nav>
+
+            <h1 class="title">
+                <span>Welcome</span>
+                I am John Doe
+            </h1>
+          <div class="autotype-container sticky-begin">
+            <div class="autotype-text">Web developer</div>
+          </div>
+            <div class="socials">
+            <!-- <a href="#" class="fa fa-facebook"></a> -->
+            </div>
+        </div>
+        </div>
     </div>
+
     <main class="main-content-selection">
-        <section class="about-me">
+        <section id = "about" class="about-me">
             SECTION2 - ABOUT ME
         </section>
 
@@ -51,19 +82,19 @@
         <section class="counter">
             SECTION5 - COUNTER
         </section>
-        <section class="my-services">
+        <section id = "services" class="my-services">
             SECTION6 - MY SERVICES
         </section>
-        <section class="my-portfolio">
+        <section id = "portfolio" class="my-portfolio">
             SECTION7 - MY PORTFOLIO
         </section>
-        <section class="testimonial">
+        <section id = "client" class="testimonial">
             SECTION8 - TESTIMONIAL
         </section>
-        <section class="latest-blog">
+        <section id = "blog" class="latest-blog">
             SECTION9 - LATEST BLOG
         </section>
-        <section class="contact">
+        <section id = "contact" class="contact">
             SECTION10 - SECTION CONTACT - SECTION GET IN TOUCH
         </section>
     </main>
@@ -71,7 +102,10 @@
         11 - FOOTER
     </footer>
 
-    <script src="./js/home.js" type="module" defer></script>
+    <script src="./js/home.js" type='module' defer></script>
+    <script src="./js/components/hero/background-delay.js"></script>
+    <script src="./js/components/hero/sticky.js"></script>
+
 </body>
 
 </html>
