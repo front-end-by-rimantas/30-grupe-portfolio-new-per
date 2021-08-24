@@ -102,7 +102,7 @@ class SkillsProgressBars {
                         </div>
                         <div class="bottom">
                             <div class="skills-bar" style="width: ${item.value}%;">
-                            <div class="loading-bar"></div>
+                                <div class="loading-bar"></div>
                         </div>
                     </div>
                 </div>`;
