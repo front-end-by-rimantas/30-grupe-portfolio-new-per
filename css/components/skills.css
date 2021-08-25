@@ -2,7 +2,8 @@
 
 .my-skills-selection {
     background-color: #f4f5f8;
-    padding: 100px;
+    padding-top: 80px;
+    padding-bottom: 80px;
 }
 
 /* My skills title style*/
@@ -54,6 +55,7 @@
     font-family: 'Montserrat', sans-serif;
     font-size: 10px;
     font-weight: 500;
+    position: relative;
 }
 
 .skills-progress-bar > .top > .label{
@@ -61,15 +63,16 @@
 }
 
 .skills-progress-bar > .top > .value {
-    float: right;
+    float: left;
     bottom: -15px;
-    position: relative;
+    position: absolute;
+    left: 0;
     display: block;
     padding: 3px;
+    font-size: 9px;
     animation-name: proc;
     animation-duration: 2s;
     background-color: #fff;
-    z-index: 0;
 }
 
 .skills-progress-bar > .bottom {
@@ -93,7 +96,6 @@
     animation-name: loading;
     animation-duration: 5s;
     position: relative;
-    z-index: 1;
 }
 
 /* Animated progress bars */
@@ -112,14 +114,10 @@
 
 @keyframes proc {
     0% {
-        width: 0%;
-        border-radius: 5px;
-    }
-    50% {
-        width: 50%;
+        left: 0;
     }
     100% {
-        width: 100%;
+        left: 100px;
     }
     }
 
@@ -146,7 +144,7 @@
 @media (max-width: 1230px) {
     .skills-block {
         gap: 18px;
-        padding-left: 150px;
+        padding-left: 100px;
         padding-right: 100px;
     }
   }
@@ -154,24 +152,24 @@
   @media (max-width: 930px) {
     .skills-block {
         gap: 16px;
-        padding-left: 100px;
-        padding-right: 100px;
+        padding-left: 66px;
+        padding-right: 66px;
     }
   }
 
   @media (max-width: 630px) {
     .skills-block {
         gap: 14px;
-        padding-left: 25px;
-        padding-right: 25px;
+        padding-left: 33px;
+        padding-right: 33px;
     }
   }
 
   @media (max-width: 480px) {
     .skills-block {
         gap: 12px;
-        padding-left: 35px;
-        padding-right: 35px;
+        padding-left: 22px;
+        padding-right: 22px;
     }
   }
 
