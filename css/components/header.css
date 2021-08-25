@@ -135,7 +135,7 @@ nav {
   display: inline-block;
   padding-left: 11%;
   padding-right: 11%;
-  /* z-index: 9999; */
+  z-index: 9999;
 }
 
 .hero .sticky a {
