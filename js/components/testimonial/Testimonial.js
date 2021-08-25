@@ -11,6 +11,7 @@ class Testimonial {
     renderFirst() {
         const navItem = document.querySelector('.nav-line');
         let testimonialId = 0;
+
         for (const testimonial of this.data) {
             
             if (testimonial.status === 'published') {
@@ -25,7 +26,10 @@ class Testimonial {
     // Renders testimonial html code from  data in external file and renders 
     // only exact testimonial, which was clicked in navigation
     renderContent(testimonialId) {
-        const tetimonialContentDOM = document.querySelector('.testimonial .content');
+        // const tetimonialContentDOM = document.querySelector('.testimonial .content');
+        const tetimonialContentDOM1 = document.querySelector('.content1');
+        const tetimonialContentDOM2 = document.querySelector('.content2');
+
 
 
         console.log(this.data[testimonialId]);
@@ -50,20 +54,31 @@ class Testimonial {
                             ${title}
                         </h1>
                     </div>
+                    <div class="testimonial-animation">
                         <div class="rating">
                             ${ratingHtml}
                         </div>
+                    </div>
+                    <div class="testimonial-animation-paragraph">
                         <p class="paragraph">
                             ${text}
                         </p>
+                    </div>
+                    <div class="testimonial-animation">
                         <h2 class="title2">
                             ${name}
                         </h2>
+                    </div>
+                    <div class="testimonial-animation">
                         <h3 class="title3">
                             ${profession}
                         </h3>
+                    </div>
             `;
-            tetimonialContentDOM.innerHTML = html;
+            // tetimonialContentDOM.innerHTML = html;
+            tetimonialContentDOM1.innerHTML = html;
+            tetimonialContentDOM2.innerHTML = html;
+
     }
 
     // Renders all testimonial navigation line-like buttons
@@ -88,6 +103,9 @@ class Testimonial {
     // Second purpose is to add special class on clicked button to make it wider and with special color
     listener() {
         const navList = document.querySelectorAll('.nav-line');
+        const testimonial1DOM = document.getElementById('testimonial1');
+        const testimonial2DOM = document.getElementById('testimonial2');
+
 
         // console.log(navList);
         for (const navItem of navList) {
@@ -98,7 +116,17 @@ class Testimonial {
                 for (const navItem2 of navList) {
                     navItem2.classList.remove('clicked');
                 }
+                
+                
+                testimonial1DOM.classList.add('animation1');
+                testimonial2DOM.classList.add('animation2');
+                
+                setTimeout(() => {
+                    testimonial1DOM.classList.remove('animation1');
+                    testimonial2DOM.classList.remove('animation2');
+                }, 1000);
 
+                // testimonial2DOM.classList.add('animation-name: swipe2;');
                 navItem.classList.add('clicked');
                 this.renderContent(navItem.value);
             });
