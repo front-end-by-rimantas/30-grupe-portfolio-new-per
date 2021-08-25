@@ -1,7 +1,7 @@
 class Testimonial {
     constructor(data) {
         this.data = data;
-        this.fullHtml = '';
+        this.previousTestimonial = '';
         this.renderLinks();
         this.renderFirst();
         this.listener();
@@ -43,7 +43,7 @@ class Testimonial {
                 profession,
             } = this.data[testimonialId];
 
-
+            
             let ratingHtml = '';
             for (let star = 1; star <= rating; star++) {
                 ratingHtml += `<i class="fa fa-star"></i>\n`;
@@ -76,9 +76,23 @@ class Testimonial {
                     </div>
             `;
             // tetimonialContentDOM.innerHTML = html;
-            tetimonialContentDOM1.innerHTML = html;
-            tetimonialContentDOM2.innerHTML = html;
 
+           
+            if (this.previousTestimonial === '') {
+                tetimonialContentDOM1.innerHTML = html;
+                this.previousTestimonial = html;
+            } else {
+                tetimonialContentDOM1.innerHTML = tetimonialContentDOM2.innerHTML;
+                tetimonialContentDOM2.innerHTML = html;
+            }
+
+            setTimeout(() => {
+                tetimonialContentDOM1.innerHTML = html;
+            }, 1000);
+
+
+            
+            
     }
 
     // Renders all testimonial navigation line-like buttons
