@@ -98,13 +98,15 @@ class SkillsProgressBars {
             HTML += `<div class="skills-progress-bar">
                         <div class="top">
                             <div class="label">${item.label}</div>
-                            <div class="value">${item.value}%</div>
                         </div>
                         <div class="bottom">
                             <div class="skills-bar" style="width: ${item.value}%;">
-                                <div class="loading-bar"></div>
+                                <div class="loading-bar"></div>    
                         </div>
                     </div>
+                    <div class="value-skills-bar" style="width: ${item.value}%;">
+                            <div class="value-bar">${item.value}%</div>
+                        </div>
                 </div>`;
         }
 

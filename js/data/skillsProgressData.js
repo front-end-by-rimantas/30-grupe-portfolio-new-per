@@ -4,19 +4,11 @@ const skillsProgressData = [
         value: 75,
     },
     {
-        label: `Branding`,
+        label: `Html / Css`,
         value: 95,
     },
     {
-        label: `Graphic Design`,
-        value: 70,
-    },
-    {
-        label: `Development`,
-        value: 80,
-    },
-    {
-        label: `Html / Css`,
+        label: `Branding`,
         value: 95,
     },
     {
@@ -24,9 +16,18 @@ const skillsProgressData = [
         value: 80,
     },
     {
+        label: `Graphic Design`,
+        value: 70,
+    },
+    {
         label: `Php / WorldPress`,
         value: 75,
-    },    {
+    },
+    {
+        label: `Development`,
+        value: 80,
+    },
+    {
         label: `Photo shop`,
         value: 94,
     },
