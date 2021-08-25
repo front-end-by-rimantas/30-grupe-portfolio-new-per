@@ -200,7 +200,6 @@
 }
 
 .content1 {
-    border: 1px solid red;
     display: inline-block;
     width: 64%;
     /* height: 100px; */
@@ -212,11 +211,10 @@
 
 .animation1 {
     animation-name: swipe1;
-    animation-duration: 2s;
+    animation-duration: 1s;
 }
 
 .content2 {
-    border: 1px solid green;
     display: inline-block;
     width: 64%;
     /* height: 100px; */
@@ -227,7 +225,7 @@
 }
 .animation2 {
     animation-name: swipe2;
-    animation-duration: 2s;
+    animation-duration: 1s;
 }
 
 /* 
