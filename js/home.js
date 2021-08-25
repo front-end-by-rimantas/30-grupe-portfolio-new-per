@@ -1,4 +1,6 @@
-// import JS modules
+// ************ IMPORT JS MOUDLES ************
+
+// HERO - HEADER
 import { autotypeTextData } from "./data/hero/autotypeTextData.js";
 import { AutotypeText } from "./components/hero/autotypeText.js";
 import { socialData } from "./data/hero/socialData.js";
@@ -6,10 +8,22 @@ import { Social } from "./components/hero/Social.js";
 import { SkillsProgressBars } from "./components/progress-bar/SkillsProgressBars.js";
 import { skillsProgressData } from "./data/skillsProgressData.js";
 
-// execute JS modules
+// BLOG
+import { Blog} from "./components/blog/Blog.js";
+import { blogData } from "./data/blog/blogData.js";
+
+
+
+
+// ************ EXECUTE IS MODULES ************
+
+// HERO - HEADER
 new AutotypeText(autotypeTextData);
 new Social('.socials', socialData);
 
 /* SECTION3 - MY SKILLS - start */
 new SkillsProgressBars('.skills-block', skillsProgressData);
 /* SECTION3 - MY SKILLS - End */
+// BLOG
+new Blog(blogData);
+
