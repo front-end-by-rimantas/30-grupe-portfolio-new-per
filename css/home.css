@@ -60,9 +60,10 @@ section {
   width: 100%;
   margin: auto; 
   text-align: center;
-  /* width: var(col-sm-9); */
+  margin-top: -50px;
+  font-size: 2.2rem;
+  /* padding-bottom: 10px;  BUS NAUDOJAMAS SU PSIAUDO KLASE*/
 }
-
 .row-title > .my-resume-content {
   width: 100%;
   margin: auto;
@@ -71,17 +72,18 @@ section {
 
 .my-resume-content .left-my-resume {
   /* display: inline-block;
-  max-width: 40%;
+  
   padding-right: 15px;
   padding-left: 15px;
   text-decoration: none;
   list-style: none !important; */
   width: 40%;
+  /* max-width: 40%; */
   text-align: right;
   float: left;
   background-color: royalblue;
   margin-left: 7%;
-  list-style-type: none; /*Marijus*/
+  list-style-type: none;
 }
 
 .my-resume-content .right-my-resume {
@@ -96,16 +98,18 @@ section {
   text-align: left;
   background-color: greenyellow;
   margin-right: 7%;
+  list-style-type: none;
 }
 
-.my-resume span {
-  /* color: href=; */
+/* .my-resume span {
+  color: var(--primary);
   margin-top: 15px;
   margin-bottom: 6px;
-}
+} */
 
-.row-title > .my-resume-title > span {
-  color: href="./home.css";
+.row-title > .my-resume-title > div > h4 > span {
+  color: var(--primary);
+  font-family: Montserrat, sans-serif;
 }
 
 /* .my-resume .col-6 marker {
