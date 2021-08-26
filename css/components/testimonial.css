@@ -20,24 +20,26 @@
     padding: 0;
     margin: 0;
     background: rgba(0, 0, 0, 0.6);
+    overflow: hidden;
 }
 
 .overlay2 {
+    position: relative;
+    display: inline-block;
+    /* margin-left: 18%; */
     width: 64%;
     height: 100%;
     padding: 0;
     margin: 0;
-    background: rgba(0, 0, 0, 0.6);
+    overflow: hidden;
 }
 
 .testimonial .content {
     min-height: 290px;
-    width: 64%;
-    /* background-color:  rgba(19, 19, 19, 0.6); */
+    width: 100%;
     color: var(--third);
-    margin-left: 17%;
     padding: 32px 0px;
-    /* padding: 32px 64px; */
+    background-color:  rgba(19, 19, 19, 0.6);
 }
 
 .testimonial .above-title {
@@ -54,15 +56,12 @@
     font-weight: 600;
     font-family: 'Montserrat', sans-serif;
     margin-bottom: 10px;
-    animation-name: swipe;
-    animation-duration: 2s;
 }
 
 .testimonial-animation {
     display: block;
     height: 32px;
     position: relative;
-    overflow: hidden;
 }
 
 .testimonial-animation-paragraph {
@@ -79,8 +78,6 @@
     color: #FFD600;
     margin-bottom: 10px;
     line-height: 1.85714286em;
-    animation-name: swipe;
-    animation-duration: 2s;
 }
 
 .testimonial .content i {
@@ -103,11 +100,10 @@
     line-height: 1.85714286em;
     font-weight: 400;
     overflow-y: hidden;
-    animation-name: swipe;
-    animation-duration: 2s;
 }
 
 .testimonial .title2 {
+    margin-top: 30px;
     display: inline-block;
     width: 100%;
     padding-left: 64px;
@@ -120,11 +116,10 @@
     font-family: 'Montserrat', sans-serif;
     text-transform: uppercase;
     margin-bottom: 8px;
-    animation-name: swipe;
-    animation-duration: 2s;
 }
 
 .testimonial .title3 {
+    margin-top: 25px;
     display: inline-block;
     width: 100%;
     padding-left: 64px;
@@ -138,8 +133,6 @@
     line-height: 1.2;
     margin-bottom: 8px;
     color: #ccc;
-    animation-name: swipe;
-    animation-duration: 2s;
 }
 
 .testimonial-nav {
@@ -162,13 +155,13 @@
     width: 40px;
 }
 
-@media (max-width: 576px) {
+/* @media (max-width: 576px) {
     .testimonial .content {
         width: 90%;
         margin-left: 5%;
         padding: 32px 10px;
     }
-}
+} */
 
 .abu-bendras {
     margin-top: 150px;
@@ -177,12 +170,17 @@
 
 .content1 {
     display: inline-block;
-    width: 64%;
+    background: transparent;
+    /* width: 64%; */
     /* height: 100px; */
     position: absolute;
     top: 0;
     left: 50%;
-    transform: translate(-78%, 32%);
+    transform: translate(-50%, 32%);
+    min-height: 290px;
+    width: 100%;
+    color: var(--third);
+    padding: 32px 0px;
 }
 
 .swipe1-left {
@@ -196,15 +194,19 @@
 }
 
 .content2 {
+    background: transparent;
     position: absolute;
     top: 0;
     /* left: 150%; */
     /* left: -50%; */
-    transform: translate(-53%, 32%);
+    transform: translate(-50%, 32%);
     display: inline-block;
-    width: 64%;
+    /* width: 64%; */
     /* height: 100px; */
-
+    min-height: 290px;
+    width: 100%;
+    color: var(--third);
+    padding: 32px 0px;
 }
 
 .swipe2-left {
@@ -236,7 +238,7 @@
 
     }
     100% {
-        left: 34%;
+        left: 50%;
         
     }
 }
@@ -259,7 +261,7 @@
 
     }
     100% {
-        left: 34%;
+        left: 50%;
         
     }
 }

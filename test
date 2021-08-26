@@ -1,0 +1,45 @@
+/* SWIPE TO LEFT ANIMATION */
+@keyframes swipe1-left {
+    0% {
+
+
+    }
+    100% {
+        left: -70%;
+        
+    }
+}
+
+@keyframes swipe2-left {
+    0% {
+
+
+    }
+    100% {
+        left: 34%;
+        
+    }
+}
+
+/* SWIPE TO RIGHT ANIMATION */
+@keyframes swipe1-right {
+    0% {
+
+
+    }
+    100% {
+        left: 170%;
+        
+    }
+}
+
+@keyframes swipe2-right {
+    0% {
+
+
+    }
+    100% {
+        left: 34%;
+        
+    }
+}

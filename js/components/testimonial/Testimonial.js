@@ -17,7 +17,7 @@ class Testimonial {
     renderFirst() {
         const testimonial2DOM = document.getElementById('testimonial2');
 
-        testimonial2DOM.style = 'left: 150%';
+        testimonial2DOM.style = 'left: 168%';
 
         const navItem = document.querySelector('.nav-line');
         let testimonialId = 0;
@@ -145,9 +145,9 @@ class Testimonial {
                     // Assigns different initial position for testimonials depending on swipe direction
                     const direction = navItem.value > this.swipeDirection ? 'left' : 'right';
                     if (direction === 'left') {
-                        testimonial2DOM.style = 'left: 150%';
+                        testimonial2DOM.style = 'left: 168%';
                     } else {
-                        testimonial2DOM.style = 'left: -50%';
+                        testimonial2DOM.style = 'left: -68%';
                     }
                     
                     // Adds classes required to show swipe effect
