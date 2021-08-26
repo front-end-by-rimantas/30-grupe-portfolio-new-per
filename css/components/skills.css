@@ -6,47 +6,6 @@
     padding-bottom: 80px;
 }
 
-/* My skills title style*/
-
-.mySkillsTitleBlock {
-    text-align: center;
-    position: relative;
-    font-family: 'Montserrat', sans-serif;
-    margin-bottom: 20px;
-    font-size: 35px;
-    padding-bottom: px;
-    display: block;
-}
-
-.mySkillsTitleBlock h4 {
-    position: relative;
-    display: inline-block;
-    font-size: 35px;
-    padding-bottom: 9px;
-    margin-bottom: 20px;
-    color: #484848;
-    text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.1);
-    border-bottom: 2px solid #fff;
-    font-family: 'Montserrat', sans-serif;
-}
-
-.mySkillsTitleBlock h4 span {
-    color: #9c27b0;
-    font-size: 35px;
-    font-family: 'Montserrat', sans-serif;
-}
-
-.mySkillsTitleBlock h4::before {
-    content: '';
-    width: 50px;
-    height: 1px;
-    background-color: #9c27b0;
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    font-family: 'Montserrat', sans-serif;
-}
-
 
 /* My skills progress bars styles */
 
