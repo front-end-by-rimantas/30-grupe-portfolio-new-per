@@ -84,7 +84,7 @@ section {
   text-align: right;
   float: left;
   background-color: royalblue;
-  margin-left: 7%;
+  margin-left: 5.7%;
   list-style-type: none;
 }
 
@@ -99,9 +99,22 @@ section {
   float: right;
   text-align: left;
   background-color: greenyellow;
-  margin-right: 7%;
+  margin-right: 5.7%;
   list-style-type: none;
 }
+
+@media(max-width: 800px) {
+  .my-resume-content .left-my-resume {
+  width: 86%;
+  float: left;
+  
+  }
+  .my-resume-content .right-my-resume {
+  width: 86%;
+  float: left;
+  margin-right: 5.7%;
+  }
+ }
 
 /* .my-resume span {
   color: var(--primary);
