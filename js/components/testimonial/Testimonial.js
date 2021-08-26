@@ -1,20 +1,31 @@
+// THIS JAVASCRIPT CONTAINS ALL LOGIC FOR TESTIMONIAL SECTION INCLUDING:
+// - content rendering from external file 
+// - navigation rendering
+// - listening events for navigation
 class Testimonial {
     constructor(data) {
         this.data = data;
         this.previousTestimonial = '';
+        this.swipeDirection;
         this.renderLinks();
         this.renderFirst();
         this.listener();
         // this.renderContent();
     }
 
+    // ********** RENDERS FIRST PUBLISHED TESTIMONIAL ITEM/REVIEW **********
     renderFirst() {
+        const testimonial2DOM = document.getElementById('testimonial2');
+
+        testimonial2DOM.style = 'left: 150%';
+
         const navItem = document.querySelector('.nav-line');
         let testimonialId = 0;
 
         for (const testimonial of this.data) {
             
             if (testimonial.status === 'published') {
+                this.swipeDirection = testimonialId;
                 this.renderContent(testimonialId);
                 navItem.classList.add('clicked');
                 break;
@@ -23,16 +34,16 @@ class Testimonial {
         }
     }
 
+    // ********** RENDERS TESTIMONIAL CONTENT **********
     // Renders testimonial html code from  data in external file and renders 
     // only exact testimonial, which was clicked in navigation
     renderContent(testimonialId) {
         // const tetimonialContentDOM = document.querySelector('.testimonial .content');
         const tetimonialContentDOM1 = document.querySelector('.content1');
         const tetimonialContentDOM2 = document.querySelector('.content2');
+        this.swipeDirection = testimonialId;
 
-
-
-        console.log(this.data[testimonialId]);
+        // console.log(this.data[testimonialId]);
 
             const {
                 status,
@@ -75,8 +86,6 @@ class Testimonial {
                         </h3>
                     </div>
             `;
-            // tetimonialContentDOM.innerHTML = html;
-
            
             if (this.previousTestimonial === '') {
                 tetimonialContentDOM1.innerHTML = html;
@@ -88,13 +97,10 @@ class Testimonial {
 
             setTimeout(() => {
                 tetimonialContentDOM1.innerHTML = html;
-            }, 1000);
-
-
-            
-            
+            }, 1000);      
     }
 
+    // ********** RENDER TESTIMONIAL NAVIGATION LINKS **********
     // Renders all testimonial navigation line-like buttons
     renderLinks() {
         const navDOM = document.querySelector('.testimonial-nav');
@@ -111,6 +117,7 @@ class Testimonial {
         }
     }
 
+    // ********** CREATES CLICK LISTENER ON EVERY NAVIGATION LINK/BUTTON **********
     // Creates click listening events for every line-like button from array of buttons 
     // Main purpose is to check which exactly line-like button was clicked and based on that 
     // call testimonial rendering method with exact testimonial ID
@@ -127,27 +134,32 @@ class Testimonial {
                 // const navID = '' + navItem;
                 // console.log('clicked', navItem.value);
 
+                if(navItem.value != this.swipeDirection) {
                 for (const navItem2 of navList) {
                     navItem2.classList.remove('clicked');
                 }
                 
                 
-                testimonial1DOM.classList.add('swipe1-right');
-                testimonial2DOM.classList.add('swipe2-right');
-                testimonial2DOM.classList.add('swipe-right');
+                const direction = navItem.value > this.swipeDirection ? 'left' : 'right';
+                if (direction === 'left') {
+                    testimonial2DOM.style = 'left: 150%';
+                } else {
+                    testimonial2DOM.style = 'left: -50%';
+                }
+                
+                testimonial1DOM.classList.add(`swipe1-${direction}`);
+                testimonial2DOM.classList.add(`swipe2-${direction}`);
                 
                 setTimeout(() => {
-                    testimonial1DOM.classList.remove('swipe1-right');
-                    testimonial2DOM.classList.remove('swipe2-right');
-                    testimonial2DOM.classList.remove('swipe-right');
-                }, 1000);
+                    testimonial1DOM.classList.remove(`swipe1-${direction}`);
+                    testimonial2DOM.classList.remove(`swipe2-${direction}`);
+                }, 1000); 
 
-                // testimonial2DOM.classList.add('animation-name: swipe2;');
                 navItem.classList.add('clicked');
-                this.renderContent(navItem.value);
-            });
-        }
-    }
+                    this.renderContent(navItem.value);      }
+            });     
+        }   
+    }   
 };
 
 export { Testimonial };
