@@ -48,51 +48,113 @@ section {
 
 .row-title {
   display: inline-block;
-  width: 800px;
-  margin-top: auto;
-  margin-left: -15;
-  margin-right: -15;
+  /* max-width: 780px; */
+  /* width: 80%; */
+  /* margin-top: 0; */
+  /* margin-left: 15%; */
+  /* margin-right: 15%; */
+  /* padding-left: 15px; */
+  /* padding-right: 15px; */
   background-color: yellow;
 }
 
-.col-md-6 {
-  flex: 0 0 50%;
-  max-width: 50%;
-  position: relative;
+.row-title > .my-resume-title {
   width: 100%;
-  min-height: 1px;
-  padding-right: 15px;
-  padding-left: 15px;
-  box-sizing: border-box;
-  text-decoration: none;
-  list-style: none !important;
-  outline: none !important;
+  margin: auto; 
+  text-align: center;
+  /* width: var(col-sm-9); */
 }
 
-.my-resume h3 {
+.row-title > .my-resume-content {
+  width: 100%;
+  margin: auto;
+  /* width: var(col-sm-9); */
+}
+
+.my-resume-content .left-my-resume {
+  /* display: inline-block;
+  max-width: 40%;
+  padding-right: 15px;
+  padding-left: 15px;
+  text-decoration: none;
+  list-style: none !important; */
+  width: 40%;
+  text-align: right;
+  float: left;
+  background-color: royalblue;
+  margin-left: 7%;
+  list-style-type: none; /*Marijus*/
+}
+
+.my-resume-content .right-my-resume {
+  /* display: inline-block;
+  max-width: 40%;
+  padding-right: 15px;
+  padding-left: 15px;
+  text-decoration: none;
+  list-style: none !important; */
+  width: 40%;
+  float: right;
+  text-align: left;
+  background-color: greenyellow;
+  margin-right: 7%;
+}
+
+.my-resume span {
+  color: href=;
   margin-top: 15px;
   margin-bottom: 6px;
 }
 
-.my-resume .col-md-6 marker {
-  right: 40px !important;
+.row-title > .my-resume-title > span {
+  color: href="./home.css";
 }
 
-.my-resume .col-md-6 ul {
+/* .my-resume .col-6 marker {
+  right: 10px !important;
+} */
+
+/* .col-12 {
+  margin-bottom: 25px;
+} */
+
+/* .my-resume .col-6 ul {
   display: block;
   margin-block-start: 1em;
-  margin-inline-end: 1em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
   padding-inline-start: 40px;
   text-align: right !important;
-}
+  background-color: red;
+  border-right: 1px solid #f4f4f4;
+} */
 
 .my-resume li {
   padding: 30px 30px 10px;
 };
 
+.row-title > .my-resume-content > .left-icon {
+  padding: 30px;
+}
 
+.row-title > .my-resume-content > .left-icon > .icon > i {
+  background-color: powderblue;
+  text-align: center;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 50%;
+  top: 9px;
+  text-align: center;
+}
+
+.row-title > .my-resume-content > .right-icon > .icon > i {
+  background-color: green;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 50%;
+  top: 9px;
+  text-align: center;
+}
 
 /* END SECTION MY RESUME */
 
