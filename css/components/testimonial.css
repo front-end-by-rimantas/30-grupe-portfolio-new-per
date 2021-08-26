@@ -26,7 +26,6 @@
 .overlay2 {
     position: relative;
     display: inline-block;
-    /* margin-left: 18%; */
     width: 64%;
     height: 100%;
     padding: 0;
@@ -155,24 +154,9 @@
     width: 40px;
 }
 
-/* @media (max-width: 576px) {
-    .testimonial .content {
-        width: 90%;
-        margin-left: 5%;
-        padding: 32px 10px;
-    }
-} */
-
-.abu-bendras {
-    margin-top: 150px;
-    position: relative;
-}
-
 .content1 {
     display: inline-block;
     background: transparent;
-    /* width: 64%; */
-    /* height: 100px; */
     position: absolute;
     top: 0;
     left: 50%;
@@ -197,12 +181,8 @@
     background: transparent;
     position: absolute;
     top: 0;
-    /* left: 150%; */
-    /* left: -50%; */
     transform: translate(-50%, 32%);
     display: inline-block;
-    /* width: 64%; */
-    /* height: 100px; */
     min-height: 290px;
     width: 100%;
     color: var(--third);
@@ -263,5 +243,23 @@
     100% {
         left: 50%;
         
+    }
+}
+
+@media (max-width: 1220px) {
+    .overlay2 {
+        width: 80%;
+    }
+}
+
+@media (max-width: 575px) {
+    .overlay2 {
+        width: 95%;
+        
+    }
+
+    .testimonial .paragraph {
+        padding-left: 10px;
+        padding-right: 10px;
     }
 }
