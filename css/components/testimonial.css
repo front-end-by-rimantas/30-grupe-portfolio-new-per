@@ -209,39 +209,50 @@
     transform: translate(-78%, 32%);
 }
 
-.animation1 {
-    animation-name: swipe1;
+.swipe1-left {
+    animation-name: swipe1-left;
+    animation-duration: 1s;
+}
+
+.swipe1-right {
+    animation-name: swipe1-right;
     animation-duration: 1s;
 }
 
 .content2 {
+    position: absolute;
+    top: 0;
+    /* left: 150%; */
+    left: -50%;
+    transform: translate(-53%, 32%);
     display: inline-block;
     width: 64%;
     /* height: 100px; */
-    position: absolute;
-    top: 0;
-    left: 150%;
-    transform: translate(-53%, 32%);
+
 }
-.animation2 {
-    animation-name: swipe2;
+
+.swipe2-left {
+    animation-name: swipe2-left;
     animation-duration: 1s;
 }
 
-/* 
-.abu3 {
-    border: 1px solid green;
-    display: inline-block;
-    width: 64%;
-    position: absolute;
-    top: 0;
+.swipe2-right {
+    animation-name: swipe2-right;
+    animation-duration: 1s;
+}
+
+/* .swipe-left {
     left: 150%;
-    transform: translate(-50%, 0%);
-    animation-name: swipe2;
-    animation-duration: 2s;
 } */
 
-@keyframes swipe1 {
+/* .swipe-right {
+
+} */
+
+
+
+/* SEIPE TO LEFT ANIMATION */
+@keyframes swipe1-left {
     0% {
 
 
@@ -252,7 +263,30 @@
     }
 }
 
-@keyframes swipe2 {
+@keyframes swipe2-left {
+    0% {
+
+
+    }
+    100% {
+        left: 34%;
+        
+    }
+}
+
+/* SEIPE TO RIGHT ANIMATION */
+@keyframes swipe1-right {
+    0% {
+
+
+    }
+    100% {
+        left: 170%;
+        
+    }
+}
+
+@keyframes swipe2-right {
     0% {
 
 

@@ -132,12 +132,14 @@ class Testimonial {
                 }
                 
                 
-                testimonial1DOM.classList.add('animation1');
-                testimonial2DOM.classList.add('animation2');
+                testimonial1DOM.classList.add('swipe1-right');
+                testimonial2DOM.classList.add('swipe2-right');
+                testimonial2DOM.classList.add('swipe-right');
                 
                 setTimeout(() => {
-                    testimonial1DOM.classList.remove('animation1');
-                    testimonial2DOM.classList.remove('animation2');
+                    testimonial1DOM.classList.remove('swipe1-right');
+                    testimonial2DOM.classList.remove('swipe2-right');
+                    testimonial2DOM.classList.remove('swipe-right');
                 }, 1000);
 
                 // testimonial2DOM.classList.add('animation-name: swipe2;');
