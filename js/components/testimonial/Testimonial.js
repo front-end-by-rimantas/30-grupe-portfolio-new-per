@@ -87,9 +87,12 @@ class Testimonial {
                     </div>
             `;
            
+            // Generating html content on testimonial slides. First slide contains reprezents previous content before swipe 
+            // and second slide reprezents new conent
             if (this.previousTestimonial === '') {
                 tetimonialContentDOM1.innerHTML = html;
                 this.previousTestimonial = html;
+                tetimonialContentDOM2.innerHTML = html;
             } else {
                 tetimonialContentDOM1.innerHTML = tetimonialContentDOM2.innerHTML;
                 tetimonialContentDOM2.innerHTML = html;
@@ -131,32 +134,35 @@ class Testimonial {
         // console.log(navList);
         for (const navItem of navList) {
             navItem.addEventListener('click', () => {
-                // const navID = '' + navItem;
                 // console.log('clicked', navItem.value);
 
+                // In case if user press the same navigation button no action is required
                 if(navItem.value != this.swipeDirection) {
-                for (const navItem2 of navList) {
-                    navItem2.classList.remove('clicked');
-                }
-                
-                
-                const direction = navItem.value > this.swipeDirection ? 'left' : 'right';
-                if (direction === 'left') {
-                    testimonial2DOM.style = 'left: 150%';
-                } else {
-                    testimonial2DOM.style = 'left: -50%';
-                }
-                
-                testimonial1DOM.classList.add(`swipe1-${direction}`);
-                testimonial2DOM.classList.add(`swipe2-${direction}`);
-                
-                setTimeout(() => {
-                    testimonial1DOM.classList.remove(`swipe1-${direction}`);
-                    testimonial2DOM.classList.remove(`swipe2-${direction}`);
-                }, 1000); 
-
-                navItem.classList.add('clicked');
-                    this.renderContent(navItem.value);      }
+                    for (const navItem2 of navList) {
+                        navItem2.classList.remove('clicked'); // Removes active/clicked style from buttons
+                    }
+                    
+                    // Assigns different initial position for testimonials depending on swipe direction
+                    const direction = navItem.value > this.swipeDirection ? 'left' : 'right';
+                    if (direction === 'left') {
+                        testimonial2DOM.style = 'left: 150%';
+                    } else {
+                        testimonial2DOM.style = 'left: -50%';
+                    }
+                    
+                    // Adds classes required to show swipe effect
+                    testimonial1DOM.classList.add(`swipe1-${direction}`);
+                    testimonial2DOM.classList.add(`swipe2-${direction}`);
+                    
+                    // Shortly after animation removes classes required to show swipe effect
+                    setTimeout(() => {
+                        testimonial1DOM.classList.remove(`swipe1-${direction}`);
+                        testimonial2DOM.classList.remove(`swipe2-${direction}`);
+                    }, 1000); 
+    
+                    navItem.classList.add('clicked'); // Adds active/clicked style from buttons
+                        this.renderContent(navItem.value);   
+                }   
             });     
         }   
     }   
