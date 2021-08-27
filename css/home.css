@@ -11,10 +11,17 @@
 @import "../fonts/text-fonts/text-fonts.css";
 
 /* components */
-@import "./components/button.css";
-@import "./components/footer.css";
-@import "./components/header.css";
+
 @import "./components/about-me.css";
+@import "./components/testimonial.css";
+@import './components/button.css';
+@import './components/footer.css';
+@import './components/header.css';
+@import './components/skills.css';
+@import "./components/blog.css";
+@import "./components/main-tittles.css";
+
+
 
 /* CUSTOM PAGE STYLE BELOW THIS COMMENT LINE */
 
@@ -24,6 +31,7 @@
 
 section {
   padding: 50px 0;
+  overflow: hidden;
 }
 
 /* ------------------------------------------------------ */

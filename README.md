@@ -9,7 +9,7 @@ _Team work project_
 
 This project is for education purpose. Main aim is to build reald world like complex website with a groop of students to practice team work.
 
-Site published at: https://front-end-by-rimantas.github.io/30-grupe-portfolio/
+Site published at: https://front-end-by-rimantas.github.io/30-grupe-portfolio-new-per/
 
 Design: https://new-per.netlify.app/demo-3.html#
 
