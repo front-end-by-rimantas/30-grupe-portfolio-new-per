@@ -11,6 +11,7 @@
 @import "../fonts/text-fonts/text-fonts.css";
 
 /* components */
+@import "./components/about-me.css";
 @import "./components/testimonial.css";
 @import './components/button.css';
 @import './components/footer.css';
@@ -19,6 +20,7 @@
 @import "./components/blog.css";
 @import "./components/main-tittles.css";
 @import "/css/components/counter.css";
+
 
 
 /* CUSTOM PAGE STYLE BELOW THIS COMMENT LINE */
@@ -35,8 +37,6 @@ section {
 /* ------------------------------------------------------ */
 
 /* SECTION ABOUT ME */
-.about-me {
-}
 
 /* SECTION MY SKILLS */
 .my-skills {
