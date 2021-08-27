@@ -1,23 +1,26 @@
-// This script is for button background animation. It covers both the effect on hover and the
+// This script is for all buttons background animation. It covers both the effect on hover and the
 // effect on out of hover. 
 
-const button = document.getElementById('new-per-button');
-let buttonText = button.innerHTML;
+// const button = document.querySelector('.new-per-button');
+// let buttonText = button.innerHTML;
 
-function buttonAnimation() {
+// FUNCTION RENDERS ONE EXACT BUTTON
+function renderButton(button, buttonID) {
+    console.log(buttonID);
+    let buttonText = button.innerHTML;
     buttonText = buttonText.toUpperCase();
 
     // Generates button html
     button.innerHTML = `
-    <div id="main-button" class="main-button">
-        <div id="button-overlay" class="button-overlay"> 
+    <div id="main-button${buttonID}" class="main-button">
+        <div id="button-overlay${buttonID}" class="button-overlay"> 
         </div>
         ${buttonText}
     </div>
     `
     // DOM variables for text and background animation
-    const textAnimation = document.getElementById('main-button'); 
-    const backgroundAnimation = document.getElementById('button-overlay');
+    const textAnimation = document.getElementById(`main-button${buttonID}`); 
+    const backgroundAnimation = document.getElementById(`button-overlay${buttonID}`);
 
     // Animation for hover begins. Button mouseenter listener
     button.addEventListener('mouseenter', () => {
@@ -59,4 +62,13 @@ function buttonAnimation() {
     });
 };
 
-export { buttonAnimation };
+// FUNCTIONS GOES THROUG HTML DOCUMENTS GRABS ALL BUTTONS AND CALLS RENDERBUTTON FUNCTION TO RENDER EACH OF BUTTON
+function allButtonAnimation() {
+    let buttonID = 0;
+    const buttons = document.querySelectorAll('.new-per-button');
+    for (const button of buttons) {
+        renderButton(button, buttonID++);
+    }
+}
+
+export { allButtonAnimation };
