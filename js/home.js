@@ -7,6 +7,7 @@ import { socialData } from "./data/hero/socialData.js";
 import { Social } from "./components/hero/Social.js";
 import { SkillsProgressBars } from "./components/progress-bar/SkillsProgressBars.js";
 import { skillsProgressData } from "./data/skillsProgressData.js";
+import { buttonAnimation } from "./components/button/button.js";
 
 // BLOG
 import { Blog} from "./components/blog/Blog.js";
@@ -27,3 +28,4 @@ new SkillsProgressBars('.skills-block', skillsProgressData);
 // BLOG
 new Blog(blogData);
 
+buttonAnimation();
