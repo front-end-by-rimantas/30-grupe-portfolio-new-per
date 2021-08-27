@@ -1,8 +1,9 @@
 // This script is for all buttons background animation. It covers both the effect on hover and the
 // effect on out of hover. 
 
-// const button = document.querySelector('.new-per-button');
-// let buttonText = button.innerHTML;
+let hoverTime;
+let unhoverTime;
+
 
 // FUNCTION RENDERS ONE EXACT BUTTON
 function renderButton(button, buttonID) {
@@ -22,7 +23,8 @@ function renderButton(button, buttonID) {
     const backgroundAnimation = document.getElementById(`button-overlay${buttonID}`);
 
     // Animation for hover begins. Button mouseenter listener
-    button.addEventListener('mouseenter', () => {
+    button.addEventListener('mouseenter', (time) => {
+        hoverTime = time.timeStamp;
         textAnimation.classList.add('text-animation');
         backgroundAnimation.classList.add('background-animation');
 
@@ -42,22 +44,41 @@ function renderButton(button, buttonID) {
     });
 
     // Animation for unhover begins. Button mouseleave listener
-    button.addEventListener('mouseleave', () => {
-        textAnimation.style = '';
-        textAnimation.style = '';
-        textAnimation.classList.add('text-animation');
-        backgroundAnimation.classList.add('background-animation');
-        textAnimation.classList.add('reverse');
-        backgroundAnimation.classList.add('reverse');
-        
-        // Clears animation classes after animation is finished
-        setTimeout(() => {
-            textAnimation.classList.remove('text-animation');
-            backgroundAnimation.classList.remove('background-animation');
-            textAnimation.classList.remove('reverse');
-            backgroundAnimation.classList.remove('reverse');
-        }, 300);
+    button.addEventListener('mouseleave', (time) => {
+        unhoverTime = time.timeStamp;
+        // Internal function for unhover animation
+        function unhover() {
+            textAnimation.style = '';
+            // textAnimation.style.backgroundColor = 'var(--primary)';
+            
+            textAnimation.classList.add('text-animation');
+            backgroundAnimation.classList.add('background-animation');
+            textAnimation.classList.add('reverse');
+            backgroundAnimation.classList.add('reverse');
+            
+            // Clears animation classes after animation is finished
+            setTimeout(() => {
+                textAnimation.classList.remove('text-animation');
+                backgroundAnimation.classList.remove('background-animation');
+                textAnimation.classList.remove('reverse');
+                backgroundAnimation.classList.remove('reverse');
+            }, 300);
+        }
 
+        // Hover animation takes 0.3s and unhover animation takes also 0.3s.
+        // If you swipe too fast throuhg button hover and unhover happens almost emediately and it results
+        // animation display error as hover animation is not finished when unhover animation begins.
+        // To solve this I have created function which checks if time between hover and unhover is less then 0.3s
+        // and in that case it waits for hover animation to finish befo running unhover animation. Else it runs
+        // unhover animation emediately
+        if (unhoverTime - hoverTime <= 300) {
+            setTimeout(() => {
+                unhover();
+            }, 300);
+        } else {
+            unhover();
+        }
+        
     });
 };
 

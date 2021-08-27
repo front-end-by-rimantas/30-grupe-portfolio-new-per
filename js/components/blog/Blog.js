@@ -25,7 +25,7 @@ class Blog {
 
              if (status != 'published') continue;
 
-             html += `<div class="blog-container col-12 col-lg-4">
+             html = `<div class="blog-container col-12 col-lg-4">
                         <img src="./img/blog/${photoName}" alt="${photoAlt}">
                         <a href="${buttonLink}" class = "blog-button">
                             ${buttonText}
@@ -56,7 +56,7 @@ class Blog {
                         </div>`;
                         // console.log(blogDOM.innerHTML);
 
-             blogDOM.innerHTML = html;
+             blogDOM.innerHTML += html;
          }
     }
 };

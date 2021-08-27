@@ -24,7 +24,7 @@ button {
 
 .text-animation {
     animation-name: text-animation;
-    animation-fill-mode: forwards;
+    /* animation-fill-mode: forwards; */
     animation-duration: .3s;
 }
 
@@ -52,7 +52,7 @@ button {
 
 .background-animation {
     animation-name: background-animation;
-    animation-fill-mode: forwards;
+    /* animation-fill-mode: forwards; */
     animation-duration: .3s;
 }
 
