@@ -1,0 +1,38 @@
+.main-button {
+    position: relative;
+    display: inline-block;
+    font-size: 13px;
+    line-height: 15px;
+    padding: 15px 35px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    border-radius: 30px;
+    cursor: pointer;
+    color: var(--third);
+    background-color: var(--primary);
+    margin-bottom: 20px;
+    border: 0;
+    font: 400 13.3333px Arial;
+}
+
+.main-button:hover {
+    color:#000;
+    
+}
+
+.button-overlay:hover {
+    display: inline-block;
+    /* position: absolute; */
+    /* height: 100%; */
+    width: 100%;
+    background-color: var(--third);
+}
+
+@keyframes {
+    0% {
+
+    }
+    100% {
+
+    }
+}
