@@ -12,9 +12,7 @@
 
 /* components */
 
-
-
-
+@import "./components/about-me.css";
 @import "./components/testimonial.css";
 @import './components/button.css';
 @import './components/footer.css';
@@ -22,6 +20,7 @@
 @import './components/skills.css';
 @import "./components/blog.css";
 @import "./components/main-tittles.css";
+
 
 
 /* CUSTOM PAGE STYLE BELOW THIS COMMENT LINE */
@@ -38,8 +37,6 @@ section {
 /* ------------------------------------------------------ */
 
 /* SECTION ABOUT ME */
-.about-me {
-}
 
 /* SECTION MY SKILLS */
 .my-skills {
