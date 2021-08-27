@@ -25,7 +25,7 @@
 /***************************/
 
 section {
-  padding: 50px 0;
+  padding: 70px 0;
 }
 
 /* ------------------------------------------------------ */
@@ -43,12 +43,14 @@ section {
   display: inline-block;
   width: 100%;
   margin-top: auto;
+  padding-top: 90px;
   background-color: peru;
 }
 
 .row-title {
   display: inline-block;
-  /* max-width: 780px; */
+  padding-bottom: 170px;
+  /* max-width: 780px;
   /* width: 80%; */
   /* margin-top: 0; */
   /* margin-left: 15%; */
@@ -74,7 +76,6 @@ section {
 
 .my-resume-content .left-my-resume {
   /* display: inline-block;
-  
   padding-right: 15px;
   padding-left: 15px;
   text-decoration: none;
@@ -112,8 +113,17 @@ section {
   .my-resume-content .right-my-resume {
   width: 86%;
   float: left;
-  margin-right: 5.7%;
+  /* margin-right: 5.7%; */
   }
+
+  
+    .right-icon .icon { 
+      left: 20;
+   }
+
+   .left-icon .icon { 
+      right: 20;
+}
  }
 
 /* .my-resume span {
@@ -161,6 +171,7 @@ section {
   border-radius: 50%;
   top: 9px;
   text-align: center;
+  margin-left: 7px;
 }
 
 .row-title > .my-resume-content > .right-icon > .icon > i {
@@ -171,6 +182,7 @@ section {
   border-radius: 50%;
   top: 9px;
   text-align: center;
+  margin-left: 7px;
 }
 
 /* END SECTION MY RESUME */
