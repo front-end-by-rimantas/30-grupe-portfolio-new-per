@@ -34,15 +34,19 @@ section {
   border-radius: 1px;
 }
 .about-me > .right-column > p {
-  border-bottom: 1px solid var(--paragraph);
+  font: 16px Roboto, sans-serif;
+  line-height: 1.857em;
+  border-bottom: 1px solid var(--paragraph2);
+  margin-bottom: 20px !important;
 }
+
 .about-me > .right-column > a {
 }
 .about-me > .right-column > h2 {
   font: 32px Montserrat, sans-serif;
   border-bottom: 1px solid var(--paragraph2);
   width: 60%;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
 }
 .about-me > .right-column > h2 > span {
   color: var(--primary);
@@ -60,9 +64,22 @@ section {
 }
 .about-me > .right-column > h3 {
   font: 19.2px Montserrat, sans-serif;
+  margin-bottom: 20px;
+}
+.about-me > .right-column > .personal-list {
+  flex-direction: row;
+  display: flex;
 }
 .about-me > .right-column > .personal-list > ul {
-  flex-direction: row;
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 50%;
+}
+.about-me > .right-column > .personal-list > ul > li > p {
+  display: inline-block;
+}
+.about-me > .right-column > .personal-list > ul > li {
+  margin-top: 15px;
 }
 
 /* SECTION MY SKILLS */
