@@ -6,7 +6,6 @@
 
 // FUNCTION RENDERS ONE EXACT BUTTON
 function renderButton(button, buttonID) {
-    console.log(buttonID);
     let buttonText = button.innerHTML;
     buttonText = buttonText.toUpperCase();
 
