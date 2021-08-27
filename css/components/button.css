@@ -1,4 +1,5 @@
 .main-button {
+    /* height: 47px; */
     position: relative;
     display: inline-block;
     font-size: 13px;
@@ -13,26 +14,43 @@
     margin-bottom: 20px;
     border: 0;
     font: 400 13.3333px Arial;
+    z-index: 30;
+    animation-name: text-animation;
+    animation-duration: .7s;
 }
 
 .main-button:hover {
-    color:#000;
-    
+    color:#000;    
 }
 
-.button-overlay:hover {
-    display: inline-block;
-    /* position: absolute; */
-    /* height: 100%; */
-    width: 100%;
+.button-overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
     background-color: var(--third);
+    width: 0%;
+    border-radius: 47px;
+    z-index: -1;
+    animation-name: background-animation;
+    animation-duration: .7s;
 }
 
-@keyframes {
+@keyframes background-animation {
     0% {
-
+        width: 0;
     }
     100% {
+        width: 100%
+    }
+}
 
+@keyframes text-animation {
+    0% {
+        /* color: var(--third); */
+    }
+    100% {
+        color:#000;
     }
 }
