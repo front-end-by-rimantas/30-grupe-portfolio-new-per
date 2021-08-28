@@ -49,7 +49,7 @@ section {
 
 .row-title {
   display: inline-block;
-  padding-bottom: 170px;
+  padding-bottom: 260px;
   /* max-width: 780px;
   /* width: 80%; */
   /* margin-top: 0; */
@@ -87,6 +87,7 @@ section {
   background-color: royalblue;
   margin-left: 5.7%;
   list-style-type: none;
+  border-right: 1px solid #f4f4f4;
 }
 
 .my-resume-content .right-my-resume {
@@ -102,7 +103,9 @@ section {
   background-color: greenyellow;
   margin-right: 5.7%;
   list-style-type: none;
+  border-left: 1px solid #f4f4f4;
 }
+
 
 @media(max-width: 800px) {
   .my-resume-content .left-my-resume {
@@ -117,13 +120,13 @@ section {
   }
 
   
-    .right-icon .icon { 
+    /* .right-icon .icon { 
       left: 20;
    }
 
    .left-icon .icon { 
       right: 20;
-}
+} */
  }
 
 /* .my-resume span {
