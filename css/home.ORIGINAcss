@@ -140,56 +140,6 @@ section {
   font-family: Montserrat, sans-serif;
 }
 
-.my-resume-content .left-my-resume > li > span {
-  color: var(--primary);
-  font-family: Roboto;
-  font-size: 12px;
-  font-weight: 500;
-}
-
-.my-resume-content .left-my-resume > li > h3 {
-  color: var(--primary);
-  font-size: 14px;
-  font-weight: 500;
-  margin-top: 15px;
-  font-family: 'Montserrat';
-  text-transform: uppercase;
-}
-
-.my-resume-content .left-my-resume > li > h4 {
-  color: #4b4b4b;
-  font-size: 12px;
-  font-weight: bold;
-  font-weight: 500;
-  font-family: 'Montserrat';
-  margin: 10px 0 10px;
-}
-
-.my-resume-content .right-my-resume > li > span {
-  color: var(--primary);
-  font-family: Roboto;
-  font-size: 12px;
-  font-weight: 500;
-}
-
-.my-resume-content .right-my-resume > li > h3 {
-  color: var(--primary);
-  font-size: 14px;
-  font-weight: 500;
-  margin-top: 15px;
-  font-family: 'Montserrat';
-  text-transform: uppercase;
-}
-
-.my-resume-content .right-my-resume > li > h4 {
-  color: #4b4b4b;
-  font-size: 12px;
-  font-weight: bold;
-  font-weight: 500;
-  font-family: 'Montserrat';
-  margin: 10px 0 10px;
-}
-
 /* .my-resume .col-6 marker {
   right: 10px !important;
 } */
