@@ -4,8 +4,46 @@
     
 }
 
-.my-portfolio .gallery-navigation{
-    
+.my-portfolio .gallery-navigation {
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.my-portfolio .gallery-navigation a {
+    position: relative;
+    text-decoration: none;
+    margin: 0px 10px;
+    padding: 5px 5px;
+    font-size: 14px;
+    letter-spacing: 2px;
+    color: var(--paragraph);
+    cursor: pointer;
+    font: 400 13.3333px Arial;
+
+}
+
+.my-portfolio .gallery-navigation .active::after {
+    position: absolute;
+    top: 25px;
+    left: 45%;
+    content: '';
+    display: inline-block;
+    height: 3px;
+    width: 3px;
+    border-radius: 50%;
+    background-color: var(--primary);
+}
+
+.my-portfolio .gallery-navigation a:hover::after {
+    position: absolute;
+    top: 25px;
+    left: 45%;
+    content: '';
+    display: inline-block;
+    height: 3px;
+    width: 3px;
+    border-radius: 50%;
+    background-color: var(--primary);
 }
 
 .my-portfolio .gallery {
