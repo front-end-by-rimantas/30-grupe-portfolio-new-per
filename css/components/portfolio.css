@@ -25,7 +25,7 @@
     /* transition: .5s ease; */
     opacity: 0;
 
-    animation-name: overlay1-animation; 
+    /* animation-name: overlay1-animation;  */
     /* animation-direction: reverse; */
     animation-fill-mode: forwards;
     animation-duration: 1s;
@@ -45,7 +45,7 @@
     animation-play-state: paused;  */
 
     /* animation-direction: reverse; */
-    animation-name: overlay2-animation; 
+    /* animation-name: overlay2-animation;  */
     animation-fill-mode: forwards;
     animation-duration: 1s;
 }
@@ -61,16 +61,26 @@
     transform: skewX(45deg);
     
     /* animation-direction: reverse; */
-    animation-name: overlay3-animation; 
+    /* animation-name: overlay3-animation;  */
     animation-fill-mode: forwards;
     animation-duration: 1s;
 }
 
-/* .forward1 {
-    
-    animation-name: overlay3-animation; 
+.playforward1 {
+    animation-name: overlay1-animation; 
+}
 
-} */
+.playforward2 {
+    animation-name: overlay2-animation; 
+}
+
+.playforward3 {
+    animation-name: overlay3-animation; 
+}
+
+.playbackward {
+    animation-direction: reverse;
+}
 
 @keyframes overlay1-animation {
     0% {

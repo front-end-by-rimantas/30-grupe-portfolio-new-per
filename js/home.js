@@ -10,6 +10,9 @@ import { Testimonial } from "./components/testimonial/Testimonial.js";
 import { SkillsProgressBars } from "./components/progress-bar/SkillsProgressBars.js";
 import { skillsProgressData } from "./data/skillsProgressData.js";
 
+// PRTFOLIO GALLERY
+import { GalleryHover } from "./components/portfolio-gallery/GalleryHover.js";
+
 // BLOG
 import { Blog} from "./components/blog/Blog.js";
 import { blogData } from "./data/blog/blogData.js";
@@ -29,3 +32,5 @@ new SkillsProgressBars('.skills-block', skillsProgressData);
 // BLOG
 new Blog(blogData);
 
+// PORTFOLIO GALLERY
+new GalleryHover();
