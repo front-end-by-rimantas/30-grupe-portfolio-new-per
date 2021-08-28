@@ -9,10 +9,12 @@ import { testimonialData } from "./data/testimonial/testimonialData.js";
 import { Testimonial } from "./components/testimonial/Testimonial.js";
 import { SkillsProgressBars } from "./components/progress-bar/SkillsProgressBars.js";
 import { skillsProgressData } from "./data/skillsProgressData.js";
-import { GalleryNavigation } from "./components/portfolio-gallery/GalleryNavigation.js";
+
 
 // PRTFOLIO GALLERY
 import { GalleryHover } from "./components/portfolio-gallery/GalleryHover.js";
+import { GalleryNavigation } from "./components/portfolio-gallery/GalleryNavigation.js";
+import { portfolioAllData } from "./data/portfolio-gallery/portfolioAllData.js";
 
 // BLOG
 import { Blog} from "./components/blog/Blog.js";
@@ -35,4 +37,4 @@ new Blog(blogData);
 
 // PORTFOLIO GALLERY
 new GalleryHover();
-new GalleryNavigation();
+new GalleryNavigation(portfolioAllData, './img/portfolio/');
