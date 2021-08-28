@@ -15,6 +15,7 @@ import { skillsProgressData } from "./data/skillsProgressData.js";
 import { GalleryHover } from "./components/portfolio-gallery/GalleryHover.js";
 import { GalleryNavigation } from "./components/portfolio-gallery/GalleryNavigation.js";
 import { portfolioAllData } from "./data/portfolio-gallery/portfolioAllData.js";
+import { portfolioBrandData } from "./data/portfolio-gallery/portfolioBrandData.js";
 
 // BLOG
 import { Blog} from "./components/blog/Blog.js";
@@ -37,4 +38,4 @@ new Blog(blogData);
 
 // PORTFOLIO GALLERY
 new GalleryHover();
-new GalleryNavigation(portfolioAllData, './img/portfolio/');
+new GalleryNavigation(portfolioAllData, portfolioBrandData, '', '', '', './img/portfolio/');
