@@ -1,6 +1,7 @@
 .my-portfolio .row {
-    display: flex;
-    flex-wrap: wrap;
+    /* display: flex;
+    flex-wrap: wrap; */
+    
 }
 
 .my-portfolio .gallery-navigation{
@@ -11,14 +12,43 @@
 
 }
 
-.my-portfolio .gallery-overlay {|
+.my-portfolio .gallery-overlay {
+    display: inline-block;
+    position: absolute;
+    top: 8px;
+    bottom: 8px;
+    left: 8px;
+    right: 8px;
+    background: rgba(255, 255, 255, 0.9);
+    border: 1px solid #f7f7f7;
+    /* z-index: 100; */
+    transition: .5s ease;
+    opacity: 0;
+}
+
+.my-portfolio .gallery-overlay {
+    display: inline-block;
+    position: absolute;
+    top: 8px;
+    bottom: 8px;
+    left: 8px;
+    right: 8px;
+    background: rgba(255, 255, 255, 0.9);
+    border: 1px solid #f7f7f7;
+    /* z-index: 100; */
+    transition: .5s ease;
+    opacity: 0;
 }
 
 .my-portfolio .gallery-photo {
-    border: 1px solid red;
+    position: relative;
+    width: 32%;
     display: inline-block;
-    /* background-color: yellow; */
-    padding: 5px;
+    margin: 5px 3px;
+}
+
+.gallery-photo :hover {
+    opacity: 1;
 }
 
 .my-portfolio .gallery-photo img{
