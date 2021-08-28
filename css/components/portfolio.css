@@ -13,6 +13,7 @@
 }
 
 .my-portfolio .gallery-overlay1 {
+    overflow: hidden;
     display: inline-block;
     position: absolute;
     top: 8px;
@@ -21,37 +22,85 @@
     right: 8px;
     background: rgba(255, 255, 255, 0.9);
     border: 1px solid #f7f7f7;
-    /* z-index: 100; */
-    transition: .5s ease;
+    /* transition: .5s ease; */
     opacity: 0;
+
+    animation-name: overlay1-animation; 
+    /* animation-direction: reverse; */
+    animation-fill-mode: forwards;
+    animation-duration: 1s;
 }
 
 .my-portfolio .gallery-overlay2 {
+    /* overflow: hidden; */
     display: inline-block;
     position: absolute;
-    top: 8px;
-    bottom: 8px;
-    left: 8px;
-    right: 8px;
-    /* background: rgba(255, 255, 255, 0.9); */
-    /* z-index: 100; */
-    /* transition: .5s ease; */
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
     opacity: 0;
     text-align: center;
-    /* animation-name: overlay2-animation; */
+    /* animation: overlay2-animation 1.1s infinite;
+    animation-play-state: paused;  */
 
-    animation: overlay2-animation 1.2s linear infinite;
-    animation-play-state: paused; 
-    animation
-    /* animation-duration: 2s; */
+    /* animation-direction: reverse; */
+    animation-name: overlay2-animation; 
+    animation-fill-mode: forwards;
+    animation-duration: 1s;
+}
+
+.my-portfolio .gallery-overlay3 {
+    position: absolute;
+    top: 0px;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    border: 1px solid #9c27b0;
+    background: rgba(0, 0, 0, 0.1);
+    transform: skewX(45deg);
+    
+    /* animation-direction: reverse; */
+    animation-name: overlay3-animation; 
+    animation-fill-mode: forwards;
+    animation-duration: 1s;
+}
+
+/* .forward1 {
+    
+    animation-name: overlay3-animation; 
+
+} */
+
+@keyframes overlay1-animation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
 @keyframes overlay2-animation {
     0% {
+        opacity: 0;
         top: 100px;
+    }
+    70% {
+        opacity: .5;
     }
     100% {
         top: 8px;
+        opacity: 1;
+    }
+}
+
+@keyframes overlay3-animation {
+    0% {
+        left: 160%;
+    }
+    100% {
+        left: -160%;
     }
 }
 
@@ -60,11 +109,6 @@
     width: 32%;
     display: inline-block;
     margin: 5px 3px;
-}
-
-.gallery-photo :hover {
-    opacity: 1;
-    animation-play-state: running; 
 }
 
 .my-portfolio .gallery-photo img{
@@ -89,4 +133,3 @@
     text-align: center;
     margin: 16px;
 }
-
