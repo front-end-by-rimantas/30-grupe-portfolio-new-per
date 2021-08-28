@@ -34,11 +34,25 @@
     left: 8px;
     right: 8px;
     /* background: rgba(255, 255, 255, 0.9); */
-    border: 1px solid #f7f7f7;
     /* z-index: 100; */
     /* transition: .5s ease; */
     opacity: 0;
     text-align: center;
+    /* animation-name: overlay2-animation; */
+
+    animation: overlay2-animation 1.2s linear infinite;
+    animation-play-state: paused; 
+    animation
+    /* animation-duration: 2s; */
+}
+
+@keyframes overlay2-animation {
+    0% {
+        top: 100px;
+    }
+    100% {
+        top: 8px;
+    }
 }
 
 .my-portfolio .gallery-photo {
@@ -50,6 +64,7 @@
 
 .gallery-photo :hover {
     opacity: 1;
+    animation-play-state: running; 
 }
 
 .my-portfolio .gallery-photo img{
