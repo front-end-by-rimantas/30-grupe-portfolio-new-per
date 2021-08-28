@@ -9,6 +9,7 @@ import { testimonialData } from "./data/testimonial/testimonialData.js";
 import { Testimonial } from "./components/testimonial/Testimonial.js";
 import { SkillsProgressBars } from "./components/progress-bar/SkillsProgressBars.js";
 import { skillsProgressData } from "./data/skillsProgressData.js";
+import { GalleryNavigation } from "./components/portfolio-gallery/GalleryNavigation.js";
 
 // PRTFOLIO GALLERY
 import { GalleryHover } from "./components/portfolio-gallery/GalleryHover.js";
@@ -34,3 +35,4 @@ new Blog(blogData);
 
 // PORTFOLIO GALLERY
 new GalleryHover();
+new GalleryNavigation();

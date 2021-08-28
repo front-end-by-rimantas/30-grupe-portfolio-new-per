@@ -16,7 +16,6 @@ class GalleryHover {
                 const overlay1 = photo.querySelector('.gallery-overlay1');
                 const overlay2 = photo.querySelector('.gallery-overlay2');
                 const overlay3 = photo.querySelector('.gallery-overlay3');
-                console.log('hovered', overlay1);
 
                 overlay1.classList.remove('playforward1');
                     overlay2.classList.remove('playforward2');
@@ -64,8 +63,6 @@ class GalleryHover {
                 const overlay1 = photo.querySelector('.gallery-overlay1');
                 const overlay2 = photo.querySelector('.gallery-overlay2');
                 const overlay3 = photo.querySelector('.gallery-overlay3');
-                console.log('hovered', overlay1);
-
 
                 if (this.unhoverTime - this.hoverTime > 1000) {
                     overlay1.classList.remove('playforward1');
