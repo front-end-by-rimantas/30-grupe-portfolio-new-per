@@ -12,7 +12,7 @@
 
 }
 
-.my-portfolio .gallery-overlay {
+.my-portfolio .gallery-overlay1 {
     display: inline-block;
     position: absolute;
     top: 8px;
@@ -26,18 +26,19 @@
     opacity: 0;
 }
 
-.my-portfolio .gallery-overlay {
+.my-portfolio .gallery-overlay2 {
     display: inline-block;
     position: absolute;
     top: 8px;
     bottom: 8px;
     left: 8px;
     right: 8px;
-    background: rgba(255, 255, 255, 0.9);
+    /* background: rgba(255, 255, 255, 0.9); */
     border: 1px solid #f7f7f7;
     /* z-index: 100; */
-    transition: .5s ease;
+    /* transition: .5s ease; */
     opacity: 0;
+    text-align: center;
 }
 
 .my-portfolio .gallery-photo {
@@ -54,5 +55,23 @@
 .my-portfolio .gallery-photo img{
     width: 100%;
     border-radius: 4px;
+}
+
+.my-portfolio .photo-title {
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 68px;
+    margin-bottom: 25px;
+    color: #111;
+    font-weight: 900;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+}
+
+.my-portfolio .gallery-icon {
+    color: var(--primary);
+    font-size: 18px;
+    text-align: center;
+    margin: 16px;
 }
 
