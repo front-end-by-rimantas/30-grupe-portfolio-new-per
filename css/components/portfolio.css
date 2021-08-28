@@ -1,0 +1,28 @@
+.my-portfolio .row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.my-portfolio .gallery-navigation{
+    
+}
+
+.my-portfolio .gallery {
+
+}
+
+.my-portfolio .gallery-overlay {|
+}
+
+.my-portfolio .gallery-photo {
+    border: 1px solid red;
+    display: inline-block;
+    /* background-color: yellow; */
+    padding: 5px;
+}
+
+.my-portfolio .gallery-photo img{
+    width: 100%;
+    border-radius: 4px;
+}
+
