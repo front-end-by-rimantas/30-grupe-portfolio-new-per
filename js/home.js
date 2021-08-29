@@ -13,6 +13,7 @@ import { Testimonial } from "./components/testimonial/Testimonial.js";
 // MY SKILS - PROGRESS BAR
 import { SkillsProgressBars } from "./components/progress-bar/SkillsProgressBars.js";
 import { skillsProgressData } from "./data/skillsProgressData.js";
+import { allButtonAnimation } from "./components/button/button.js";
 
 
 // PRTFOLIO GALLERY
@@ -47,3 +48,6 @@ new Blog(blogData);
 // PORTFOLIO GALLERY
 new GalleryHover();
 new GalleryNavigation(portfolioAllData, portfolioBrandData, portfolioDesignData, portfolioPhotoData, portfolioVideoData, './img/portfolio/');
+
+// BUTTON
+allButtonAnimation();

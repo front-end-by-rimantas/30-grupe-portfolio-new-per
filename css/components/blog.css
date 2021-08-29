@@ -1,3 +1,7 @@
+.latest-blog .mainTitleBlock {
+    margin-bottom: 40px;
+  }
+
 .latest-blog {
     display: inline-block;
 }
