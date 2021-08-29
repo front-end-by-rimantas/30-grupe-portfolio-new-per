@@ -118,9 +118,9 @@ class GalleryNavigation {
                 } 
                 else if ((window.innerWidth <= 770) && (window.innerWidth > 575)) {
                     clearStyles();
-                    document.getElementById(`gal3`).style = 'margin-top: -11%;';
-                    document.getElementById(`gal5`).style = 'margin-top: -22%;';
-                    document.getElementById(`gal7`).style = 'margin-top: -33%;';
+                    document.getElementById(`gal3`).style = 'margin-top: -12%;';
+                    document.getElementById(`gal5`).style = 'margin-top: -25%;';
+                    document.getElementById(`gal7`).style = 'margin-top: -38%;';
                 } 
                 else if (window.innerWidth <= 575) {
                     clearStyles();
