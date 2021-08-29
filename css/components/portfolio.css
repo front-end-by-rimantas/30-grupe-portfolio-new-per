@@ -157,6 +157,17 @@
     width: 32%;
     display: inline-block;
     margin: 5px 3px;
+    transform: scale(0);
+    /* transition: transform .2s; */
+}
+
+.my-portfolio .gallery-photo2 {
+    position: relative;
+    width: 32%;
+    display: inline-block;
+    margin: 5px 3px;
+    transform: scale(1);
+    transition: transform .7s;
 }
 
 .my-portfolio .gallery-photo img{

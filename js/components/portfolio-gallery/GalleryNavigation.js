@@ -64,6 +64,9 @@ class GalleryNavigation {
 
     renderGallery() {
         this.resetGallery();
+        
+       
+
 
         let i = 0;
         console.log(this.data);
@@ -85,6 +88,8 @@ class GalleryNavigation {
             // console.log(photo.que;
             
         }
+
+        this.animateGallery();
         // const imgDOM = document.querySelector('.gallery-photo img');
 
     }
@@ -93,6 +98,15 @@ class GalleryNavigation {
         for (let i = 1; i <=8; i++) {
             document.getElementById(`img${i}`).src = '';
             document.getElementById(`img${i}`).alt = '';
+        }
+    }
+
+    animateGallery() {
+        for (const photo of this.galleryPhotos) {
+            photo.classList.remove('gallery-photo2');
+            setTimeout(() => {
+                photo.classList.add('gallery-photo2');
+            }, 100);
         }
     }
 };
