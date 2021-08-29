@@ -111,7 +111,7 @@ class GalleryNavigation {
                     document.getElementById(`gal6`).style = 'margin-top: -8%;';
                     document.getElementById(`gal8`).style = 'width: 65%;';
                 } 
-                else if (window.innerWidth <= 770 && window.innerWidth > 575) {
+                else if ((window.innerWidth <= 770) && (window.innerWidth > 575)) {
                     clearStyles();
                     document.getElementById(`gal3`).style = 'margin-top: -11%;';
                     document.getElementById(`gal5`).style = 'margin-top: -22%;';

@@ -210,4 +210,10 @@
         height: 100%;
         margin-bottom: 20px;
     }
+
+    .my-portfolio .main-row {
+        width: 100%;
+        margin-left: 0%;
+        margin-right: 0%;
+    }
 }
