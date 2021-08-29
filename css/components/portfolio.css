@@ -5,7 +5,8 @@
 }
 
 .my-portfolio .gallery-navigation {
-    margin-bottom: 50px;
+    margin-top: 30px;
+    margin-bottom: 60px;
     text-align: center;
 }
 
@@ -20,6 +21,10 @@
     cursor: pointer;
     font: 400 13.3333px Arial;
 
+}
+
+.my-portfolio .gallery-navigation .active {
+    color: var(--primary);
 }
 
 .my-portfolio .gallery-navigation .active::after {
@@ -47,7 +52,6 @@
 }
 
 .my-portfolio .gallery {
-
 }
 
 .my-portfolio .gallery-overlay1 {
@@ -191,4 +195,19 @@
     font-size: 18px;
     text-align: center;
     margin: 16px;
+}
+
+@media (max-width: 770px) {
+    .my-portfolio .gallery-photo {
+        width: 42%;
+    }
+}
+
+@media (max-width: 575px) {
+    .my-portfolio .gallery-photo {
+        display: block;
+        width: 100%;
+        height: 100%;
+        margin-bottom: 20px;
+    }
 }
