@@ -9,6 +9,7 @@ import { testimonialData } from "./data/testimonial/testimonialData.js";
 import { Testimonial } from "./components/testimonial/Testimonial.js";
 import { SkillsProgressBars } from "./components/progress-bar/SkillsProgressBars.js";
 import { skillsProgressData } from "./data/skillsProgressData.js";
+import { allButtonAnimation } from "./components/button/button.js";
 
 // BLOG
 import { Blog} from "./components/blog/Blog.js";
@@ -29,3 +30,4 @@ new SkillsProgressBars('.skills-block', skillsProgressData);
 // BLOG
 new Blog(blogData);
 
+allButtonAnimation();

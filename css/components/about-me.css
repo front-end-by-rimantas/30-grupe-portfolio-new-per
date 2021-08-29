@@ -1,9 +1,14 @@
+.about-me .mainTitleBlock{
+  text-align: left;
+}
+
 .about-me {
   display: inline-block;
   width: 68%;
   height: 100%;
   margin-left: 16%;
   margin-right: 16%;
+  margin-bottom: 50px;
 }
 
 .about-me > .left-column > img {
@@ -121,6 +126,11 @@
     margin-left: 12%;
     margin-right: 11%;
   }
+}
+
+.about-me .new-per-button {
+  margin-right: 12px;
+  margin-top: 8px;
 }
 
 @media (max-width: 770px) {
