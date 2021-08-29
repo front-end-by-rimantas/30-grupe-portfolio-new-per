@@ -1,3 +1,5 @@
+// This script is for gallery rendering and gallery navigation functionality. It selectes required external data 
+// according to what navigation menu was clicked and displays all gallery photos. It also cover some responsive functionality
 class GalleryNavigation {
     constructor(allData, brandData, designData, photoData, videoData, link){
         this.allData = allData;
@@ -11,14 +13,15 @@ class GalleryNavigation {
         this.imgIds = document.getElementsByTagName('img');
         this.link = link;
 
-        this.listener();
-        // this.clearClasses();
-        this.resetGallery();
-        this.responsive();
-        this.renderGallery();
+        this.listener();    // Listener for navigation link clicks
+        this.resetGallery();    // Removes all pictures from gallery
+        this.responsive();  // Margin fixes for gallery photos - responsive
+        this.renderGallery();   //  Generates hallery from data on external files
 
     }
+
     listener() {
+        // Listens which navigation link was pressed and according to that picks right data and calls gallery rendering
         for (const button of this.buttons) {
             button.addEventListener('click', () => {
                 this.clearClasses();
@@ -27,11 +30,11 @@ class GalleryNavigation {
                 switch (button.innerHTML) {
                     case 'All':
                         this.data = this.allData;
-                        this.renderGallery('call all');
+                        this.renderGallery();
                         break;
                     case 'Brand':
                         this.data = this.brandData;
-                        this.renderGallery('call brand');
+                        this.renderGallery();
                         break;
                     case 'Design':
                         this.data = this.designData;
@@ -52,6 +55,7 @@ class GalleryNavigation {
         }
     }
 
+    // Clears the state, which nabigation link is currently pressed/active
     clearClasses() {
         for (const button of this.buttons) {
             button.classList.remove('active');
@@ -61,10 +65,8 @@ class GalleryNavigation {
     renderGallery() {
         this.resetGallery();
         
-       
-
-
         let i = 0;
+        // Renders gallery photos with published data only
         for (const photo of this.data) {
             if (photo.status === 'published') {
                 const image = document.getElementById(`img${i + 1}`);
@@ -76,9 +78,11 @@ class GalleryNavigation {
             }
         }
 
+        // Animation for all gallery photos at once
         this.animateGallery();
     }
 
+    // Removes all images from gallery so that gallery will be ready to render photos from other menu
     resetGallery() {
         for (let i = 1; i <=8; i++) {
             document.getElementById(`img${i}`).src = '';
@@ -86,6 +90,7 @@ class GalleryNavigation {
         }
     }
 
+    // Runs animation for the whole gallery. Its called when rendering new gallery from different meniu
     animateGallery() {
         for (const photo of this.galleryPhotos) {
             photo.classList.remove('gallery-photo2');
@@ -96,7 +101,7 @@ class GalleryNavigation {
     }
 
     responsive() {
-        
+        // Applies some margin fixes to gallery photos for better look
         function clearStyles() {
             for (let i = 1; i <= 8; i++) {
                 document.getElementById(`gal${i}`).style = '';
@@ -125,8 +130,6 @@ class GalleryNavigation {
         
         fixMargins();
 
-
-        // 575
         window.addEventListener('resize', () => {
             setTimeout(() => {
                 fixMargins();
