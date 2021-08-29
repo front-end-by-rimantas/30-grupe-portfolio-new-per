@@ -16,6 +16,9 @@ import { GalleryHover } from "./components/portfolio-gallery/GalleryHover.js";
 import { GalleryNavigation } from "./components/portfolio-gallery/GalleryNavigation.js";
 import { portfolioAllData } from "./data/portfolio-gallery/portfolioAllData.js";
 import { portfolioBrandData } from "./data/portfolio-gallery/portfolioBrandData.js";
+import { portfolioDesignData } from "./data/portfolio-gallery/portfolioDesignData.js";
+import { portfolioPhotoData } from "./data/portfolio-gallery/portfolioPhotoData.js";
+import { portfolioVideoData } from "./data/portfolio-gallery/portfolioVideoData.js";
 
 // BLOG
 import { Blog} from "./components/blog/Blog.js";
@@ -38,4 +41,4 @@ new Blog(blogData);
 
 // PORTFOLIO GALLERY
 new GalleryHover();
-new GalleryNavigation(portfolioAllData, portfolioBrandData, '', '', '', './img/portfolio/');
+new GalleryNavigation(portfolioAllData, portfolioBrandData, portfolioDesignData, portfolioPhotoData, portfolioVideoData, './img/portfolio/');
