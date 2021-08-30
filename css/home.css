@@ -11,7 +11,6 @@
 @import "../fonts/text-fonts/text-fonts.css";
 
 /* components */
-
 @import "./components/about-me.css";
 @import "./components/testimonial.css";
 @import './components/button.css';
@@ -20,7 +19,9 @@
 @import './components/skills.css';
 @import "./components/blog.css";
 @import "./components/main-tittles.css";
+@import "/css/components/counter.css";
 @import "./components/portfolio.css";
+
 
 
 
