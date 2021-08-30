@@ -332,31 +332,47 @@
             <div class="container">
                 <div class="row">
 
-                    <div class="left-contact-box">
+                    <div class="col-7 left-contact-box">
                         <div class="form">
-                            <div class="form-title">
-                                <h2>
+                            <div class="mainTitleBlock">
+                                <h4>
                                     <span>Get</span>
                                     in touch
-                                </h2>
+                                </h4>
                                 <form action="contact">
-                                    <div class="username">
-
+                                    <div class="form-field username">
+                                        <label for="username">
+                                            <i class="fa fa-heart"></i>
+                                        </label>
+                                        <input id="username" type="text">
                                     </div>
-                                    <div class="email">
-
+                                    <div class="form-field email">
+                                        <label for="email">
+                                            <i class="fa fa-heart"></i>
+                                        </label>
+                                        <input id="email" type="text">
                                     </div>
-                                    <div class="message">
-
+                                    <div class="form-field message">
+                                        <label for="message">
+                                            <i class="fa fa-heart"></i>
+                                        </label>
+                                        <textarea id="message" placeholder="Message For Me" rows="4"></textarea>
                                     </div>
-                                    <div class="button">
-
-                                    </div>
+                                    <button class="new-per-button">
+                                        <div class="contact-button">
+                                            Send Message
+                                        </div>
+                                    </button>
+                                    
                                 </form>
                             </div>
                         </div>
                     </div>
-                    <div class="right-contact-box"></div>
+                    <div class="col-5 right-contact-box">
+                        <div class="context-box-overlay">
+                            <img src="/img/contact.jpeg" alt="">
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>

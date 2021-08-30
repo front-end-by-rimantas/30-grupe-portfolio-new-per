@@ -1,0 +1,25 @@
+.contact {
+    background-color: var(--background);
+    padding: 100px;
+}
+
+.left-contact-box {
+    background: #fff;
+}
+
+.contact .form-field {
+    display: flex;
+    align-items: stretch;
+}
+
+.contact .form-field > label {
+    padding: 22px;
+}
+
+.contact .form-field > label .fa {
+    display: block;
+    font-size: 15px;
+}
+
+.contact .form-field > input {
+}
