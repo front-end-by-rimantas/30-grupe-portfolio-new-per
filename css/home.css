@@ -215,6 +215,10 @@ section {
   padding: 30px;
 }
 
+.row-title > .my-resume-content > .right-icon {
+  padding: 30px;
+}
+
 .row-title > .my-resume-content > .left-icon > .icon > i {
   background-color: powderblue;
   text-align: center;
@@ -229,12 +233,12 @@ section {
 
 .row-title > .my-resume-content > .right-icon > .icon > i {
   background-color: green;
+  text-align: center;
   width: 40px;
   height: 40px;
   line-height: 40px;
   border-radius: 50%;
   top: 9px;
-  text-align: center;
   margin-left: 7px;
 }
 
