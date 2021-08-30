@@ -169,12 +169,12 @@
 
 .swipe1-left {
     animation-name: swipe1-left;
-    animation-duration: 1s;
+    animation-duration: .3s;
 }
 
 .swipe1-right {
     animation-name: swipe1-right;
-    animation-duration: 1s;
+    animation-duration: .3s;
 }
 
 .content2 {
@@ -191,12 +191,12 @@
 
 .swipe2-left {
     animation-name: swipe2-left;
-    animation-duration: 1s;
+    animation-duration: .3s;
 }
 
 .swipe2-right {
     animation-name: swipe2-right;
-    animation-duration: 1s;
+    animation-duration: .3s;
 }
 
 
