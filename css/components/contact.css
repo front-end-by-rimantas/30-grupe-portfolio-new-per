@@ -7,6 +7,10 @@
     background: #fff;
 }
 
+.left-contact-box .mainTitleBlock {
+    text-transform:capitalize;
+}
+
 .contact .form-field {
     display: flex;
     align-items: stretch;
