@@ -50,7 +50,7 @@ section {
   width: 100%;
   margin-top: auto;
   padding-top: 90px;
-  background-color: peru;
+  /* background-color: peru; */
 }
 
 .row-title {
@@ -63,7 +63,7 @@ section {
   /* margin-right: 15%; */
   /* padding-left: 15px; */
   /* padding-right: 15px; */
-  background-color: yellow;
+  /* background-color: yellow; */
 }
 
 .row-title > .my-resume-title {
@@ -90,7 +90,7 @@ section {
   /* max-width: 40%; */
   text-align: right;
   float: left;
-  background-color: royalblue;
+  /* background-color: royalblue; */
   margin-left: 5.7%;
   list-style-type: none;
   border-right: 1px solid #f4f4f4;
@@ -106,7 +106,7 @@ section {
   width: 40%;
   float: right;
   text-align: left;
-  background-color: greenyellow;
+  /* background-color: greenyellow; */
   margin-right: 5.7%;
   list-style-type: none;
   border-left: 1px solid #f4f4f4;
@@ -124,44 +124,73 @@ section {
   float: left;
   /* margin-right: 5.7%; */
   }
-
-  
-    /* .right-icon .icon { 
-      left: 20;
-   }
-
-   .left-icon .icon { 
-      right: 20;
-} */
  }
 
-/* .my-resume span {
-  color: var(--primary);
+ .row-title > .my-resume-content > .left-my-resume > li > span {
+  font-size: .8rem;
+  font-weight: 500;
+  font-family: 'Roboto', sans-serif;
+  color: #212529;
+  line-height: 1.85714286em;
+ }
+
+ .row-title > .my-resume-content > .left-my-resume > li > h3 {
+  color: #9c27b0;
+  font-size: .9rem;
+  font-weight: 600;
   margin-top: 15px;
-  margin-bottom: 6px;
-} */
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  line-height: 1.2;
+}
+
+.row-title > .my-resume-content > .left-my-resume > li > h4 {
+  color: #4b4b4b;
+  font-size: .8rem;
+  text-transform: capitalize;
+  font-weight: 600;
+  font-family: 'Montserrat', sans-serif;
+  margin-bottom: .5rem;
+}
+
+.row-title > .my-resume-content > .right-my-resume > li > span {
+  font-size: .8rem;
+  font-weight: 500;
+  font-family: 'Roboto', sans-serif;
+  color: #212529;
+  line-height: 1.85714286em;
+ }
+
+ .row-title > .my-resume-content > .right-my-resume > li > h3 {
+  color: #9c27b0;
+  font-size: .9rem;
+  font-weight: 600;
+  margin-top: 15px;
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  line-height: 1.2;
+}
+
+.row-title > .my-resume-content > .right-my-resume > li > h4 {
+  color: #4b4b4b;
+  font-size: .8rem;
+  text-transform: capitalize;
+  font-weight: 600;
+  font-family: 'Montserrat', sans-serif;
+  margin-bottom: .5rem;
+}
 
 .row-title > .my-resume-title > div > h4 > span {
   color: var(--primary);
   font-family: Montserrat, sans-serif;
 }
 
-/* .my-resume .col-6 marker {
-  right: 10px !important;
-} */
-
-/* .col-12 {
-  margin-bottom: 25px;
-} */
-
-/* .my-resume .col-6 ul {
-  display: block;
-  margin-block-start: 1em;
-  padding-inline-start: 40px;
-  text-align: right !important;
-  background-color: red;
-  border-right: 1px solid #f4f4f4;
-} */
+.fa-briefcase:before {
+  color: #fff;
+}
+.fa-book:before {
+  color: #fff;
+}
 
 .my-resume li {
   padding: 30px 30px 10px;
@@ -172,7 +201,7 @@ section {
 }
 
 .row-title > .my-resume-content > .left-icon > .icon > i {
-  background-color: powderblue;
+  background-color: #2e353e;
   text-align: center;
   width: 40px;
   height: 40px;
@@ -184,7 +213,7 @@ section {
 }
 
 .row-title > .my-resume-content > .right-icon > .icon > i {
-  background-color: green;
+  background-color: #2e353e;
   width: 40px;
   height: 40px;
   line-height: 40px;

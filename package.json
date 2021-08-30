@@ -16,6 +16,9 @@
   "author": "Rolandas Seputis, Donaldas Aranauskas, Jevgenijus Suchodolskis, Arturas Stefanovic, Darius Pozela ",
   "license": "MIT",
   "devDependencies": {
-  "live-server": "^1.2.1"
+    "live-server": "^1.2.1"
+  },
+  "dependencies": {
+    "D": "^1.0.0"
   }
 }
