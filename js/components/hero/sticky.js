@@ -1,4 +1,5 @@
-// This is script for top sticky menu and for mobile navbar menu
+function sticky() {
+    // This is script for top sticky menu and for mobile navbar menu
 
 const targetDOM = document.querySelector(['.sticky-begin']);
 const navigationDOM = document.querySelector('.hero nav');
@@ -12,7 +13,7 @@ let isVisible = false;
 // console.log(window);
 window.innerWidth <= 861 ? navbarExpandDOM.classList.add('expanded') : navbarExpandDOM.classList.remove('expanded');
 
-// Listener for navbar click event. It expands menu if it is shrinked and vice wersa
+// Listener for navbar click event. It expands menu if it is shrinked and vice versa
 navbarDOM.addEventListener('click', function() {
     if (isVisible) {
         navbarExpandDOM.style.display = "none";
@@ -54,5 +55,7 @@ window.addEventListener('resize', function() {
         navbarExpandDOM.style.display = "inline-block";
         isVisible = true;
     }
-
 });
+};
+
+export { sticky };

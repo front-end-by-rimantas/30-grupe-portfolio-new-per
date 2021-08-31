@@ -1,6 +1,8 @@
 // ************ IMPORT JS MOUDLES ************
 
 // HERO - HEADER
+import { backgroundDelay } from "./components/hero/background-delay.js";
+import { sticky } from "./components/hero/sticky.js";
 import { autotypeTextData } from "./data/hero/autotypeTextData.js";
 import { AutotypeText } from "./components/hero/autotypeText.js";
 import { socialData } from "./data/hero/socialData.js";
@@ -34,6 +36,8 @@ import { blogData } from "./data/blog/blogData.js";
 // ************ EXECUTE IS MODULES ************
 
 // HERO - HEADER
+backgroundDelay();
+sticky();
 new AutotypeText(autotypeTextData);
 new Social('.socials', socialData);
 new Testimonial(testimonialData);

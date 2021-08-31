@@ -6,7 +6,7 @@ class Testimonial {
     constructor(data) {
         this.data = data;
         this.previousTestimonial = '';
-        this.swipeDirection;
+        this.currentTestimonialId = 0;
         this.renderLinks();
         this.renderFirst();
         this.listener();
@@ -25,7 +25,7 @@ class Testimonial {
         for (const testimonial of this.data) {
             
             if (testimonial.status === 'published') {
-                this.swipeDirection = testimonialId;
+                this.currentTestimonialId = testimonialId;
                 this.renderContent(testimonialId);
                 navItem.classList.add('clicked');
                 break;
@@ -41,7 +41,7 @@ class Testimonial {
         // const tetimonialContentDOM = document.querySelector('.testimonial .content');
         const tetimonialContentDOM1 = document.querySelector('.content1');
         const tetimonialContentDOM2 = document.querySelector('.content2');
-        this.swipeDirection = testimonialId;
+        this.currentTestimonialId = testimonialId;
 
         // console.log(this.data[testimonialId]);
 
@@ -100,7 +100,7 @@ class Testimonial {
 
             setTimeout(() => {
                 tetimonialContentDOM1.innerHTML = html;
-            }, 1000);      
+            }, 300);      
     }
 
     // ********** RENDER TESTIMONIAL NAVIGATION LINKS **********
@@ -137,31 +137,43 @@ class Testimonial {
                 // console.log('clicked', navItem.value);
 
                 // In case if user press the same navigation button no action is required
-                if(navItem.value != this.swipeDirection) {
+                if(navItem.value != this.currentTestimonialId) {
                     for (const navItem2 of navList) {
                         navItem2.classList.remove('clicked'); // Removes active/clicked style from buttons
                     }
                     
                     // Assigns different initial position for testimonials depending on swipe direction
-                    const direction = navItem.value > this.swipeDirection ? 'left' : 'right';
+                    const direction = navItem.value > this.currentTestimonialId ? 'left' : 'right';
                     if (direction === 'left') {
                         testimonial2DOM.style = 'left: 168%';
                     } else {
                         testimonial2DOM.style = 'left: -68%';
                     }
                     
-                    // Adds classes required to show swipe effect
-                    testimonial1DOM.classList.add(`swipe1-${direction}`);
-                    testimonial2DOM.classList.add(`swipe2-${direction}`);
-                    
-                    // Shortly after animation removes classes required to show swipe effect
-                    setTimeout(() => {
-                        testimonial1DOM.classList.remove(`swipe1-${direction}`);
-                        testimonial2DOM.classList.remove(`swipe2-${direction}`);
-                    }, 1000); 
-    
-                    navItem.classList.add('clicked'); // Adds active/clicked style from buttons
-                        this.renderContent(navItem.value);   
+                    swipe(testimonial1DOM, testimonial2DOM, direction, Math.abs(navItem.value - this.currentTestimonialId));
+
+                    function swipe(testimonial1DOM, testimonial2DOM, direction, i) {
+
+                        setTimeout(() => {
+                            if (i > 0) {
+                                // Adds classes required to show swipe effect
+                                   testimonial1DOM.classList.add(`swipe1-${direction}`);
+                                   testimonial2DOM.classList.add(`swipe2-${direction}`);
+                                   
+                                   // Shortly after animation removes classes required to show swipe effect
+                                   setTimeout(() => {
+                                       testimonial1DOM.classList.remove(`swipe1-${direction}`);
+                                       testimonial2DOM.classList.remove(`swipe2-${direction}`);
+                                   }, 305); 
+                                       
+                                       console.log(i);
+                                       // i -= 1;
+                           }
+                           swipe(testimonial1DOM, testimonial2DOM, direction, --i);
+                        }, 350); 
+                    }
+                    navItem.classList.add('clicked'); // Adds active/clicked style for buttons
+                    this.renderContent(navItem.value);       
                 }   
             });     
         }   
