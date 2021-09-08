@@ -28,7 +28,6 @@ Design: https://new-per.netlify.app/demo-3.html#
 ## Authors
 
 Rolandas: [Github](https://github.com/kvadrantas)
-Donaldas: [Github](https://github.com/Tester01024)
 Jevgenijus: [Github](https://github.com/Mirfua)
 Arturas: [Github](https://github.com/ReaLzyyy)
 Darius: [Github](https://github.com/DarPoz)
